@@ -12,9 +12,11 @@ from apiclient import discovery
 from oauth2client import client
 from oauth2client import tools
 from oauth2client.file import Storage
-from requests_oauthlib import OAuth2Session
-from requests_oauthlib.compliance_fixes import facebook_compliance_fix
 from apiclient import errors
+import indicoInfo
+import indicoio
+
+indicoio.config.api_key = indicoInfo.API_KEY
 
 
 def listMessages(service, user_id="me"):
@@ -73,29 +75,6 @@ def allMessageTimes(gmailService, user_id="me"):
 		emailTimes.append(getMessageTime(gmailService, message, user_id))
 	return emailTimes
 
-facebook_session = False
-
-# def makeFacebookRequest(baseURL, params = {}):
-#     global facebook_session
-#     if not facebook_session:
-#         # OAuth endpoints given in the Facebook API documentation
-#         authorization_base_url = 'https://www.facebook.com/dialog/oauth'
-#         token_url = 'https://graph.facebook.com/oauth/access_token'
-#         redirect_uri = 'https://www.programsinformationpeople.org/runestone/oauth'
-
-#         scope = ['user_posts','user_status']
-#         facebook = OAuth2Session(FacebookInfo.testAppID, redirect_uri=redirect_uri, scope=scope)
-#         facebook_session = facebook_compliance_fix(facebook)
-
-#         authorization_url, state = facebook_session.authorization_url(authorization_base_url)
-#         print('Opening browser to {} for authorization'.format(authorization_url))
-#         webbrowser.open(authorization_url)
-
-#         redirect_response = input('Paste the full redirect URL: ')
-#         facebook_session.fetch_token(token_url, client_secret=FacebookInfo.testAppSecret, authorization_response=redirect_response.strip())
-#     return facebook_session.get(baseURL, params=params)
-
-
 def getFBFeed(page_id, num_statuses=100):
     base = "https://graph.facebook.com/v2.11"
     node = "/" + page_id + "/feed" 
@@ -105,11 +84,59 @@ def getFBFeed(page_id, num_statuses=100):
     data = json.loads(req.text)
     return data
 
+def newsMessageComp(newsMessages):
+	onlyMessages = {}
+	for company in newsMessages:
+		onlyMessages[company] = [post['message'] for post in newsMessages[company]['data'] if 'message' in post]
+	return onlyMessages
+# setup gmail api service as described in docs
 credentials = quickstart.get_credentials()
 http = credentials.authorize(httplib2.Http())
 gmailService = discovery.build('gmail', 'v1', http=http)
 
+
+def politicalAnalysis(newsMessages):
+	averageAnalyses = {}
+	# debugging purposes, don't wanna make 500 calls 500 times now do we
+	request = False
+	try:
+		analysesFile = open('politicalAnalysis.json', 'r')
+		analyses = json.loads(analysesFile.read())
+		analysesFile.close()
+	except:
+		request = True
+		analyses = {}
+
+	for company in newsMessages:
+		# analyses[company] is now a list of batch results, an analysis of each post
+		if request:
+			analyses[company] = indicoio.political(newsMessages[company])
+		libertarianSum = 0
+		greenSum = 0
+		liberalSum = 0
+		conservativeSum = 0
+		print(json.dumps(analyses[company], indent=2))
+		print("analyses[company] type: " + str(type(analyses[company])))
+		# so let's go get the average and classify this page
+		for res in analyses[company]:
+			print(res)
+			print("res type: " + str(type(res)))
+			libertarianSum += res['Libertarian']
+			greenSum += res['Green']
+			liberalSum += res['Liberal']
+			conservativeSum += res['Conservative']
+		averageAnalyses[company] = {'Libertarian': libertarianSum/len(analyses[company]),'Green': greenSum/len(analyses[company]), 'Liberal': liberalSum/len(analyses[company]),'Conservative': conservativeSum/len(analyses[company])}
+	# debugging purposes, don't wanna make 500 calls 500 times now do we
+	analysesFile = open('politicalAnalysis.json', 'w')
+	analysesFile.write(json.dumps(analyses, indent=2))
+	analysesFile.close()
+	return averageAnalyses
+
+
+# get necessary email data (time)
+# first need IDs to request time for each message
 emails = {}
+writeEmail = False
 try:
 	emailFile = open('emails.json', 'r')
 	emails["IDs"] = json.loads(emailFile.read())['IDs']
@@ -118,8 +145,9 @@ try:
 except:
 	emails["IDs"] = listMessages(gmailService)
 	print("email IDs requested")
+	writeEmail = True
 # emails["IDs"] is a list of messageIDs
-
+# now let's go get some times
 try:
 	emailFile = open('emails.json', 'r')
 	emails['Times'] = json.loads(emailFile.read())['Times']
@@ -128,30 +156,41 @@ try:
 except:
 	emails['Times'] = allMessageTimes(gmailService)
 	print("email times requested")
-
-emailFile = open('emails.json', 'w')
-emailFile.write(json.dumps(emails, indent=2))
-emailFile.close()
-
-
-#this just does my posts which are actually pretty boring and not political so let's try something else
-# postsDict = {}
-# try:
-# 	fbFile = open('posts.json', 'r')
-# 	postsDict = json.loads(fbFile.read())
-# 	fbFile.close()
-# except:
-# 	baseurl = 'https://graph.facebook.com/me/feed'
-# 	myPrevPosts = makeFacebookRequest(baseurl, params = {'limit': 100})
-# 	postsDict = json.loads(myPrevPosts.text)
-# 	fbFile = open('posts.json', 'w')
-# 	fbFile.write(json.dumps(postsDict, indent=2))
-# 	fbFile.close()
-
+	writeEmail = True
+# we only writing if we need to out here
+if writeEmail:
+	emailFile = open('emails.json', 'w')
+	emailFile.write(json.dumps(emails, indent=2))
+	emailFile.close()
+# get facebook feed messages for political analysis
 newsMessages = {}
-popularNews = ['nytimes','cnn','foxnews','msnbc', 'washingtonpost','wsj']
-for site in popularNews:
-	newsMessages[site] = getFBFeed(site)
+popularNews = ['nytimes','cnn','foxnews','msnbc','washingtonpost','wsj']
+try:
+	newsFile = open('newsMessages.json', 'r')
+	newsMessages = json.loads(newsFile.read())
+	# make sure we have proper site data
+	if len(newsMessages.keys()) != len(popularNews):
+		raise Exception
+	newsFile.close()
+	print("newsMessages retrieved from cache")
+except:
+	print('requesting popularNews sites...')
+	for site in popularNews:
+		newsMessages[site] = getFBFeed(site)
+		print(site + " messages added...")
+	newsMessages = newsMessageComp(newsMessages)
+	newsFile = open('newsMessages.json', 'w')
+	newsFile.write(json.dumps(newsMessages, indent=2, sort_keys=True))
+	newsFile.close()
+
+a = politicalAnalysis(newsMessages)
+for news in a:
+	print(news + ": ")
+	print(json.dumps(a[news], indent=2))
+
+
+
+
 
 
 
