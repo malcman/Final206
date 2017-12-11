@@ -8,6 +8,13 @@ import unittest
 import quickstart
 import requests
 import FacebookInfo
+import datetime
+import re
+import sqlite3
+import plotly
+import plotlyInfo
+import plotly.plotly as py
+import plotly.graph_objs as go
 from apiclient import discovery
 from oauth2client import client
 from oauth2client import tools
@@ -15,8 +22,14 @@ from oauth2client.file import Storage
 from apiclient import errors
 import indicoInfo
 import indicoio
+import google.oauth2.credentials
+import google_auth_oauthlib.flow
+from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
+from google_auth_oauthlib.flow import InstalledAppFlow
 
 indicoio.config.api_key = indicoInfo.API_KEY
+plotly.tools.set_credentials_file(username='M4LL0C', api_key=plotlyInfo.API_KEY)
 
 
 def listMessages(service, user_id="me"):
@@ -58,6 +71,8 @@ def getMessageTime(gmailService, messageID, user_id="me"):
 
   	Returns:
     	Gets time of message specificed by messageID. 
+
+    TODO: make times uniform between videos and emails
 	'''
 	try:
 		response = gmailService.users().messages().get(userId=user_id, id=messageID).execute()
@@ -77,6 +92,8 @@ def allMessageTimes(gmailService, user_id="me"):
 	Returns:
 		list of all email times in the form "Sat, 07 Oct 2017 18:18:14 +0000"
 		Note: not all times include a Day, i.e. "Sat"
+
+		TODO: insert into sql table
 	'''
 	global emails
 	emailTimes = []
@@ -112,6 +129,8 @@ def newsMessageComp(newsMessages):
 		newsMessages: dict from Facebook feed request with messages included in the scope
 	Returns:
 		dictionary with page name keys and values that are a list of post messages (strings)
+
+	TODO: insert into sql table
 	'''
 	onlyMessages = {}
 	for company in newsMessages:
@@ -130,6 +149,8 @@ def politicalAnalysis(newsMessages):
 			keys: page names
 			values: dict of values with chance that the page is Libertarian, Green, Liberal, or Conservative,
 			as defined by indicoio's political analysis API
+
+	TODO: insert into sql table?
 	'''
 
 	# for debugging purposes; don't wanna make 500 calls 500 times now do we
@@ -184,6 +205,72 @@ class mismatchingNews(Exception):
 	'''
 	pass
 		
+def emailCleanAndStore(emails):
+	'''
+	Parses and cleans email time data. Inserts values into SQL database
+	Args: emails: dict of two lists of strings, Times and IDs for emails.
+	Returns: List of datetime instances to use with plotly
+	'''
+	allMonths = {'Jan': 1,'Feb': 2,'Mar': 3,'Apr': 4,'May': 5,'Jun': 6,'Jul': 7,'Aug': 8,'Sep': 9,'Oct': 10,'Nov': 11,'Dec': 12}
+
+	conn = sqlite3.connect("emailTimes.sqlite")
+	cur = conn.cursor()
+	cur.execute('DROP TABLE IF EXISTS Emails')
+	cur.execute('CREATE TABLE Emails (emailID TEXT, day TEXT, timeOfDay TEXT, timePosted DATETIME)')
+	dateTimes = []
+	for x in range(0,len(emails['IDs'])):
+		# avoid weird errors from API return
+		if type(emails['Times'][x]) == type(str()):
+			# get ID
+			_emailID = emails['IDs'][x]
+			# avoid errors when API didn't return day
+			maybeDay = re.findall('([A-Za-z]+),', emails['Times'][x])
+			_day = str()
+			if len(maybeDay) > 0:
+				_day = maybeDay[0]
+			rawTime = re.findall('\d+:\d+:\d+', emails['Times'][x])[0]
+			hour = int(rawTime[0:2])
+			minute = int(rawTime[3:5])
+			second = int(rawTime[6:])
+			date = int(re.findall('\d+',emails['Times'][x])[0])
+			maybeMonth = re.findall('[a-zA-Z]{3}',emails['Times'][x])
+			month = str()
+			for m in maybeMonth:
+				if m in allMonths:
+					month = allMonths[m]
+			# if you ever use this beyond year 2999 you will need to change this
+			year = int(re.findall('2\d{3}',emails['Times'][x])[0])
+			# make timezone changes
+			change = re.findall('\+\d{4}|\-\d{4}', emails['Times'][x])[0]
+			difference = int(change[1:3])
+			# wrap time around
+			if change[0] == '+':
+				if difference + hour >= 24:
+					hour = (difference + hour) - 24
+				else:
+					hour = difference + hour
+			else:
+				if hour - difference < 0:
+					hour = 24 + hour - difference
+				else:
+					hour = hour - difference
+			fullTimeInt = hour * 1000 + minute * 100 + second
+			#fullTimeStr = ':'.join([str(hour).zfill(2), str(minute).zfill(2), str(second).zfill(2)])
+			fullTime = datetime.datetime(year,month,date,hour,minute,second)
+			_timeOfDay = 'Night'
+			if fullTimeInt >= 0 and fullTimeInt < 559:
+				_timeOfDay = 'EarlyMorning'
+			elif fullTimeInt < 1200:
+				_timeOfDay = 'LateMorning'
+			elif fullTimeInt < 1800:
+				_timeOfDay = 'Afternoon'
+			tup = _emailID, _day, _timeOfDay, fullTime
+			cur.execute('INSERT INTO Emails (emailID, day, timeOfDay, timePosted) VALUES (?,?,?,?)', tup)
+			dateTimes.append(fullTime)
+	conn.commit()
+	cur.close()
+	conn.close()
+	return dateTimes
 
 def getEmailData(gmailService, user_id='me'):
 	'''
@@ -197,31 +284,41 @@ def getEmailData(gmailService, user_id='me'):
 	# get necessary email data (time)
 	# first need IDs to request time for each message
 	emails = {}
-	writeEmail = False
+	testDict = {}
+	needWrite = False
 	try:
 		emailFile = open('emails.json', 'r')
-		emails["IDs"] = json.loads(emailFile.read())['IDs']
+		testDict = json.loads(emailFile.read())
 		emailFile.close()
-		print("email IDs retrieved from cache")
+		if 'IDs' not in testDict:
+			# make requests for messages data
+			emails['IDs'] = listMessages(gmailService, user_id)
+			needWrite = True
+		else:
+			emails['IDs'] = testDict['IDs']
+		# emails["IDs"] is a list of messageIDs
+		# now let's go get some times
+		if 'Times' not in testDict:
+			# make requests for all messages
+			emails['Times'] = allMessageTimes(gmailService, user_id)
+			needWrite = True
+		else:
+			emails['Times'] = testDict['Times']
+		# get clean time strings
+		if 'TimeStrs' not in testDict:
+			emails['TimeStrs'] = emailCleanAndStore(emails)
+			needWrite = True
+		else:
+			emails['TimeStrs'] = testDict
+
 	except:
-		# make requests for messages
-		emails["IDs"] = listMessages(gmailService, user_id)
-		print("email IDs requested")
-		writeEmail = True
-	# emails["IDs"] is a list of messageIDs
-	# now let's go get some times
-	try:
-		emailFile = open('emails.json', 'r')
-		emails['Times'] = json.loads(emailFile.read())['Times']
-		emailFile.close()
-		print("email times retrieved from cache")
-	except:
-		# make requests for all messages
+		needWrite = True
+		emails['IDs'] = listMessages(gmailService, user_id)
 		emails['Times'] = allMessageTimes(gmailService, user_id)
-		print("email times requested")
-		writeEmail = True
-	# we only writing if we need to out here
-	if writeEmail:
+		emails['TimeStrs'] = emailCleanAndStore(emails)
+
+	if needWrite:
+		# we only writing if we need to out here
 		emailFile = open('emails.json', 'w')
 		emailFile.write(json.dumps(emails, indent=2))
 		emailFile.close()
@@ -295,7 +392,7 @@ def getFacebookData():
 		# updates current publicSites (what we already have data for)
 		publicSites = [k for k in newsMessages.keys()]
 		# allows user to modify
-		publicSites =  updateFacebookSites(publicSites)
+		publicSites =  updateFacebookSites(publicSites, True)
 		# make sure we have proper site data
 		if len(newsMessages.keys()) != len(publicSites):
 			raise mismatchingNews
@@ -331,7 +428,7 @@ def getFacebookData():
 	# for all other exceptions i.e. no cache file
 	except:
 		# user updates sites
-		publicSites = updateFacebookSites(publicSites)
+		publicSites = updateFacebookSites(publicSites, True)
 		# go get 'em...
 		print('requesting publicSites sites...')
 		for site in publicSites:
@@ -347,16 +444,185 @@ def getFacebookData():
 
 	return newsMessages
 
+def videosList(client, maxResults, part='snippet,statistics', _chart='mostPopular', _regionCode='US'):
+	'''
+	Args: 
+		client: authorized youtube API client
+		channelId: valid youtube channelId that will be searched
+		maxResults: max number of results returned
+		part: format of each result
+	Returns: dict; youtube API response for requested channel
+	'''
+	return client.videos().list(part=part, maxResults=maxResults, chart=_chart, regionCode=_regionCode).execute()
+
+def getVideoViews(fullYoutubeData):
+	'''
+	Args: fullYoutubeData: youtube API response dict called with part='snippet'
+	Returns: list of only viewCounts associated with the videos
+	'''
+	viewCounts = []
+	for v in fullYoutubeData['items']:
+		viewCounts.append(v['statistics']['viewCount'])
+	return viewCounts
+
+def getVideoTimes(fullYoutubeData):
+	'''
+	Args: fullYoutubeData: youtube API response dict called with part='snippet'
+	Returns: list of only times associated with the videos
+	'''
+	times = []
+	for v in fullYoutubeData['items']:
+		times.append(v['snippet']['publishedAt'])
+	return times
+
+def cleanVideoTimes(vidTimes):
+	dateTimes = []
+	for t in vidTimes:
+		rawTime = re.findall('\d+:\d+:\d+', t)[0]
+		hour = int(rawTime[0:2])
+		minute = int(rawTime[3:5])
+		second = int(rawTime[6:])
+		rawDate = re.findall('\d{4}-\d{2}-\d{2}', t)[0]
+		year = int(rawDate[0:4])
+		month = int(rawDate[5:7])
+		day = int(rawDate[8:10])
+		dateTimes.append(datetime.datetime(year,month,day,hour,minute,second))
+	return dateTimes
+
+def getYoutubeData(client):
+	'''
+	Args: client: authorized youtube API client
+	Returns: list of upload times (strings) for 50 currently popular videos on youtube
+	'''
+	youtubeData = {}
+	testDict = {}
+	needWrite = False
+	try:
+		youtubeRawFile = open('youtubeData.json', 'r')
+		testDict = json.loads(youtubeRawFile.read()) 
+		youtubeRawFile.close()
+		if 'responseData' not in testDict:
+			youtubeData['responseData'] = videosList(client, 50)
+			print('Requesting video data...')
+			needWrite = True
+		else:
+			youtubeData['responseData'] = testDict['responseData']
+		if 'Times' not in testDict:
+			youtubeData['Times'] = getVideoTimes(youtubeData['responseData'])
+			print('Parsing video times....')
+			needWrite = True
+		else:
+			youtubeData['Times'] = testDict['Times']
+		if 'Views' not in testDict:
+			youtubeData['Views'] = getVideoViews(youtubeData['responseData'])
+			print('Parsing video views...')
+			needWrite = True
+		else:
+			youtubeData['Views'] = testDict['Views']
+
+	except:
+		needWrite = True
+		youtubeData['responseData'] = videosList(client, 50)
+		youtubeData['Times'] = getVideoTimes(youtubeData['responseData'])
+		youtubeData['Views'] = getVideoViews(youtubeData['responseData'])
+		
+	if needWrite:
+		print('Writing youtube data...')
+		youtubeRawFile = open('youtubeData.json', 'w')
+		youtubeRawFile.write(json.dumps(youtubeData, indent=2))
+		youtubeRawFile.close()
+	return youtubeData
+
+
+def plotYoutubeData(times, views):
+	trace1 = go.Scatter(x=times, y=views, marker={'color': 'red', 'symbol': 'circle-cross', 'size': "10"}, 
+		mode="markers", name='1st Trace')                                        
+	data=go.Data([trace1])
+	layout=go.Layout(title="Popular Youtube Videos", xaxis={'title':'Time'}, yaxis={'title':'Views'})
+	figure=go.Figure(data=data,layout=layout)
+	py.iplot(figure, filename='YoutubeGmailTimes')
+
+
+def plotPoliticalAnalysis(leaningsAverage):
+	# finish and do correctly
+	sites = leaningsAverage.keys()
+	trace1 = go.Bar(
+	    x = sites,
+	    y = [d['Libertarian'] for d in leaningsAverage],
+	    name = 'Libertarian'
+	)
+	trace2 = go.Bar(
+	    x=sites,
+	    y=[d['Green'] for d in leaningsAverage],
+	    name = 'Green'
+	)
+	trace3 = go.Bar(
+		x = sites,
+		y = [d['Liberal'] for d in leaningsAverage],
+		name = 'Liberal'
+	)
+	trace4 = go.Bar(
+		x = sites,
+		y = [d['Conservative'] for d in leaningsAverage],
+		name = 'Conservative'
+	)
+
+	data = [trace1, trace2, trace3, trace4]
+	layout = go.Layout(
+	    barmode='stack'
+	)
+
+	fig = go.Figure(data=data, layout=layout)
+	py.iplot(fig, filename='politicalLeaningsAverage')
+
+
+
 # setup gmail api service as described in docs
 credentials = quickstart.get_credentials()
 http = credentials.authorize(httplib2.Http())
 gmailService = discovery.build('gmail', 'v1', http=http)
 
-# get all email data and store it in emails dict
-emails = getEmailData(gmailService)
+CLIENT_SECRETS_FILE = "client_secret_youtube.json"
+
+# setup youtube api as given in docs
+SCOPES = ['https://www.googleapis.com/auth/youtube.force-ssl']
+
+try:
+    import argparse
+    flags = argparse.ArgumentParser(parents=[tools.argparser]).parse_args()
+except ImportError:
+    flags = None
+
+home_dir = os.path.expanduser('~')
+credential_dir = os.path.join(home_dir, '.credentials')
+if not os.path.exists(credential_dir):
+	os.makedirs(credential_dir)
+credential_path = os.path.join(credential_dir, 'youtube-python-quickstart.json')
+
+store = Storage(credential_path)
+credentials = store.get()
+if not credentials or credentials.invalid:
+	flow = client.flow_from_clientsecrets(CLIENT_SECRETS_FILE, SCOPES)
+	flow.user_agent = '206Youtube'
+	if flags:
+		credentials = tools.run_flow(flow, store, flags)
+	else: # Needed only for compatibility with Python 2.6
+		credentials = tools.run(flow, store)
+	print('Storing credentials to ' + credential_path)
+
+
+#flow = InstalledAppFlow.from_client_secrets_file(CLIENT_SECRETS_FILE, SCOPES)
+#credentials = flow.run_console()
+youtube = build('youtube', 'v3', credentials = credentials)
+os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
+
+
 # get political analyses of all specified facebook posts
 leanings = politicalAnalysis(getFacebookData())
-print(json.dumps(leanings, indent=2))
-
-
+# get all email data and store it in emails dict
+emails = getEmailData(gmailService)
+videos = getYoutubeData(youtube)
+vidDateTimes = cleanVideoTimes(videos['Times'])
+emailDateTimes = emailCleanAndStore(emails)
+plotYoutubeData(vidDateTimes, videos['Views'])
 
