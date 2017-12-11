@@ -1,0 +1,3618 @@
+{
+  "all": {
+    "nytimes": [
+      {
+        "Libertarian": 0.7016320229,
+        "Green": 0.1332495809,
+        "Liberal": 0.101810649,
+        "Conservative": 0.0633077845
+      },
+      {
+        "Libertarian": 0.2559521496,
+        "Green": 0.3294527829,
+        "Liberal": 0.20670542120000002,
+        "Conservative": 0.2078897059
+      },
+      {
+        "Libertarian": 0.2184370011,
+        "Green": 0.36614719030000004,
+        "Liberal": 0.1952737123,
+        "Conservative": 0.22014211120000002
+      },
+      {
+        "Libertarian": 0.0298959557,
+        "Green": 0.8819474578000001,
+        "Liberal": 0.0627905279,
+        "Conservative": 0.025365972900000002
+      },
+      {
+        "Libertarian": 0.23863933980000002,
+        "Green": 0.3659840226,
+        "Liberal": 0.15890799460000002,
+        "Conservative": 0.23646859820000002
+      },
+      {
+        "Libertarian": 0.1470862627,
+        "Green": 0.5519099832000001,
+        "Liberal": 0.1497636884,
+        "Conservative": 0.1512401402
+      },
+      {
+        "Libertarian": 0.22369964420000002,
+        "Green": 0.38066414,
+        "Liberal": 0.1633480787,
+        "Conservative": 0.2322881222
+      },
+      {
+        "Libertarian": 0.2939015627,
+        "Green": 0.3600662649,
+        "Liberal": 0.1891197264,
+        "Conservative": 0.15691241620000002
+      },
+      {
+        "Libertarian": 0.33741244670000003,
+        "Green": 0.2556753457,
+        "Liberal": 0.10579767080000001,
+        "Conservative": 0.3011145294
+      },
+      {
+        "Libertarian": 0.2922629118,
+        "Green": 0.2966642678,
+        "Liberal": 0.2105529308,
+        "Conservative": 0.2005199343
+      },
+      {
+        "Libertarian": 0.5145772696,
+        "Green": 0.10079234840000001,
+        "Liberal": 0.0802441314,
+        "Conservative": 0.30438625810000003
+      },
+      {
+        "Libertarian": 0.18001818660000002,
+        "Liberal": 0.41666021940000003,
+        "Green": 0.17874954640000001,
+        "Conservative": 0.22457204760000002
+      },
+      {
+        "Libertarian": 0.015951205,
+        "Green": 0.9568893909,
+        "Liberal": 0.0166694708,
+        "Conservative": 0.010489894100000001
+      },
+      {
+        "Libertarian": 0.2190196365,
+        "Green": 0.395509392,
+        "Liberal": 0.20104971530000001,
+        "Conservative": 0.1844212711
+      },
+      {
+        "Libertarian": 0.1744300425,
+        "Green": 0.43637636300000004,
+        "Liberal": 0.14727215470000002,
+        "Conservative": 0.2419213504
+      },
+      {
+        "Libertarian": 0.13712336120000002,
+        "Green": 0.47795268890000003,
+        "Liberal": 0.2230085135,
+        "Conservative": 0.1619154662
+      },
+      {
+        "Libertarian": 0.18481631580000002,
+        "Green": 0.6044749618,
+        "Liberal": 0.0945616066,
+        "Conservative": 0.1161472052
+      },
+      {
+        "Libertarian": 0.19096493720000002,
+        "Green": 0.509798646,
+        "Liberal": 0.1914380491,
+        "Conservative": 0.1077984199
+      },
+      {
+        "Libertarian": 0.4481098652,
+        "Green": 0.2724018693,
+        "Liberal": 0.1432121545,
+        "Conservative": 0.1362761408
+      },
+      {
+        "Libertarian": 0.1204842106,
+        "Green": 0.4901118279,
+        "Liberal": 0.2578307986,
+        "Conservative": 0.1315731555
+      },
+      {
+        "Libertarian": 0.3378311992,
+        "Green": 0.2806748152,
+        "Liberal": 0.1791311949,
+        "Conservative": 0.2023628503
+      },
+      {
+        "Libertarian": 0.22768671810000002,
+        "Liberal": 0.35812920330000003,
+        "Green": 0.25755736230000004,
+        "Conservative": 0.1566267163
+      },
+      {
+        "Libertarian": 0.8367488384,
+        "Liberal": 0.041299276100000004,
+        "Green": 0.0238218047,
+        "Conservative": 0.0981300846
+      },
+      {
+        "Libertarian": 0.5402246118,
+        "Liberal": 0.14360487460000002,
+        "Green": 0.0691968352,
+        "Conservative": 0.24697364870000002
+      },
+      {
+        "Libertarian": 0.13448219,
+        "Liberal": 0.4075170755,
+        "Green": 0.31383070350000003,
+        "Conservative": 0.1441700011
+      },
+      {
+        "Libertarian": 0.2036332935,
+        "Green": 0.3781186342,
+        "Liberal": 0.252052635,
+        "Conservative": 0.1661954522
+      },
+      {
+        "Libertarian": 0.223489657,
+        "Green": 0.42048949,
+        "Liberal": 0.1981210262,
+        "Conservative": 0.1578998715
+      },
+      {
+        "Libertarian": 0.2033676207,
+        "Liberal": 0.32259640100000003,
+        "Green": 0.22594140470000001,
+        "Conservative": 0.2480945289
+      },
+      {
+        "Libertarian": 0.12142334880000001,
+        "Green": 0.4901739061,
+        "Liberal": 0.2144954801,
+        "Conservative": 0.1739072651
+      },
+      {
+        "Libertarian": 0.2408645898,
+        "Green": 0.27042075990000003,
+        "Liberal": 0.15487942100000002,
+        "Conservative": 0.3338352144
+      },
+      {
+        "Libertarian": 0.1507989764,
+        "Green": 0.41295081380000004,
+        "Liberal": 0.2345656902,
+        "Conservative": 0.2016844749
+      },
+      {
+        "Libertarian": 0.1790779978,
+        "Green": 0.2360401154,
+        "Liberal": 0.1718099266,
+        "Conservative": 0.41307190060000004
+      },
+      {
+        "Libertarian": 0.2712464929,
+        "Green": 0.3853305876,
+        "Liberal": 0.1565666497,
+        "Conservative": 0.1868563443
+      },
+      {
+        "Libertarian": 0.23363892730000002,
+        "Green": 0.3807396293,
+        "Liberal": 0.1267525554,
+        "Conservative": 0.2588687837
+      },
+      {
+        "Libertarian": 0.2273586988,
+        "Green": 0.32644784450000003,
+        "Liberal": 0.1997359693,
+        "Conservative": 0.2464575171
+      },
+      {
+        "Libertarian": 0.16938376430000002,
+        "Green": 0.5664998889,
+        "Liberal": 0.1533118337,
+        "Conservative": 0.11080452800000001
+      },
+      {
+        "Libertarian": 0.0039858813,
+        "Green": 0.9860090017,
+        "Liberal": 0.0088715795,
+        "Conservative": 0.0011335737
+      },
+      {
+        "Libertarian": 0.3717829287,
+        "Green": 0.2666703165,
+        "Liberal": 0.20891951020000002,
+        "Conservative": 0.1526273191
+      },
+      {
+        "Libertarian": 0.3018985689,
+        "Liberal": 0.2733569741,
+        "Green": 0.103540428,
+        "Conservative": 0.3212040365
+      },
+      {
+        "Libertarian": 0.24996812640000002,
+        "Liberal": 0.4358377755,
+        "Green": 0.06866022940000001,
+        "Conservative": 0.245533824
+      },
+      {
+        "Libertarian": 0.130524978,
+        "Green": 0.6032797098,
+        "Liberal": 0.10967476670000001,
+        "Conservative": 0.1565205306
+      },
+      {
+        "Libertarian": 0.19096493720000002,
+        "Green": 0.509798646,
+        "Liberal": 0.1914380491,
+        "Conservative": 0.1077984199
+      },
+      {
+        "Libertarian": 0.1544072777,
+        "Green": 0.5797945857,
+        "Liberal": 0.1231534556,
+        "Conservative": 0.1426446587
+      },
+      {
+        "Libertarian": 0.21652227640000002,
+        "Liberal": 0.3439404666,
+        "Green": 0.1048993245,
+        "Conservative": 0.33463796970000004
+      },
+      {
+        "Libertarian": 0.2416581511,
+        "Green": 0.2886689603,
+        "Liberal": 0.1731392592,
+        "Conservative": 0.29653361440000003
+      },
+      {
+        "Libertarian": 0.21838451920000002,
+        "Liberal": 0.5360209942,
+        "Green": 0.118208617,
+        "Conservative": 0.1273859739
+      },
+      {
+        "Libertarian": 0.18692347410000001,
+        "Green": 0.3167570233,
+        "Liberal": 0.2905606329,
+        "Conservative": 0.2057587951
+      },
+      {
+        "Libertarian": 0.0774569064,
+        "Liberal": 0.1187069491,
+        "Green": 0.0185914654,
+        "Conservative": 0.7852447033000001
+      },
+      {
+        "Libertarian": 0.3080162704,
+        "Green": 0.5167016983,
+        "Liberal": 0.0815753192,
+        "Conservative": 0.0937067345
+      },
+      {
+        "Libertarian": 0.2819362879,
+        "Green": 0.3182994127,
+        "Liberal": 0.2440588176,
+        "Conservative": 0.15570540730000001
+      },
+      {
+        "Libertarian": 0.1756633371,
+        "Green": 0.4126382172,
+        "Liberal": 0.2740337849,
+        "Conservative": 0.137664631
+      },
+      {
+        "Libertarian": 0.2945949435,
+        "Green": 0.5009537935,
+        "Liberal": 0.1295180917,
+        "Conservative": 0.0749331564
+      },
+      {
+        "Libertarian": 0.2156108767,
+        "Liberal": 0.3257153928,
+        "Green": 0.2344297022,
+        "Conservative": 0.2242441177
+      },
+      {
+        "Libertarian": 0.3164381087,
+        "Green": 0.39154446130000004,
+        "Liberal": 0.09782263640000001,
+        "Conservative": 0.1941947788
+      },
+      {
+        "Libertarian": 0.345217824,
+        "Green": 0.2844430506,
+        "Liberal": 0.13825035100000002,
+        "Conservative": 0.2320888042
+      },
+      {
+        "Libertarian": 0.21419429780000002,
+        "Green": 0.35056856270000003,
+        "Liberal": 0.1994686723,
+        "Conservative": 0.2357684821
+      },
+      {
+        "Libertarian": 0.19096493720000002,
+        "Green": 0.509798646,
+        "Liberal": 0.1914380491,
+        "Conservative": 0.1077984199
+      },
+      {
+        "Libertarian": 0.0218468904,
+        "Green": 0.9388908148,
+        "Liberal": 0.0187006518,
+        "Conservative": 0.0205616485
+      },
+      {
+        "Libertarian": 0.0048547271,
+        "Green": 0.9484855533000001,
+        "Liberal": 0.0390113704,
+        "Conservative": 0.0076484187
+      },
+      {
+        "Libertarian": 0.4210569561,
+        "Green": 0.1948892027,
+        "Liberal": 0.1849263012,
+        "Conservative": 0.1991276592
+      },
+      {
+        "Libertarian": 0.2534438074,
+        "Liberal": 0.2360243499,
+        "Green": 0.1588577777,
+        "Conservative": 0.3516740501
+      },
+      {
+        "Libertarian": 0.24007728700000003,
+        "Green": 0.35919582840000003,
+        "Liberal": 0.2778931558,
+        "Conservative": 0.1228337139
+      },
+      {
+        "Libertarian": 0.19674575330000002,
+        "Green": 0.4967621565,
+        "Liberal": 0.10100322960000001,
+        "Conservative": 0.2054888308
+      },
+      {
+        "Libertarian": 0.237783134,
+        "Green": 0.11065406350000001,
+        "Liberal": 0.10076603290000001,
+        "Conservative": 0.5507967472
+      },
+      {
+        "Libertarian": 0.2453349978,
+        "Green": 0.3389164805,
+        "Liberal": 0.1994645149,
+        "Conservative": 0.2162839919
+      },
+      {
+        "Libertarian": 0.2041489631,
+        "Green": 0.38188150530000003,
+        "Liberal": 0.15739871560000002,
+        "Conservative": 0.2565707266
+      },
+      {
+        "Libertarian": 0.2321270704,
+        "Green": 0.3311352432,
+        "Liberal": 0.098038964,
+        "Conservative": 0.33869877460000003
+      },
+      {
+        "Libertarian": 0.3365569115,
+        "Liberal": 0.4481948316,
+        "Green": 0.0739930645,
+        "Conservative": 0.1412551403
+      },
+      {
+        "Libertarian": 0.1794244647,
+        "Green": 0.4489758015,
+        "Liberal": 0.19024154540000002,
+        "Conservative": 0.18135820330000002
+      },
+      {
+        "Libertarian": 0.23423984650000002,
+        "Liberal": 0.2904654741,
+        "Green": 0.2897827029,
+        "Conservative": 0.1855119318
+      },
+      {
+        "Libertarian": 0.22849944230000002,
+        "Green": 0.5089254975,
+        "Liberal": 0.11479145290000001,
+        "Conservative": 0.1477836221
+      },
+      {
+        "Libertarian": 0.3435445726,
+        "Green": 0.2564992309,
+        "Liberal": 0.2177766263,
+        "Conservative": 0.18217962980000002
+      },
+      {
+        "Libertarian": 0.35161146520000003,
+        "Liberal": 0.1182186976,
+        "Green": 0.0776910111,
+        "Conservative": 0.4524788857
+      },
+      {
+        "Libertarian": 0.16305810210000002,
+        "Green": 0.5358734131,
+        "Liberal": 0.1587983519,
+        "Conservative": 0.1422701925
+      },
+      {
+        "Libertarian": 0.19096493720000002,
+        "Green": 0.509798646,
+        "Liberal": 0.1914380491,
+        "Conservative": 0.1077984199
+      },
+      {
+        "Libertarian": 0.3057980239,
+        "Green": 0.2797913253,
+        "Liberal": 0.0909774601,
+        "Conservative": 0.3234332204
+      },
+      {
+        "Libertarian": 0.2599412203,
+        "Liberal": 0.2991091907,
+        "Green": 0.10615453870000001,
+        "Conservative": 0.3347950578
+      },
+      {
+        "Libertarian": 0.16505052150000002,
+        "Green": 0.5094043612,
+        "Liberal": 0.17371949550000002,
+        "Conservative": 0.1518256068
+      },
+      {
+        "Libertarian": 0.1745427698,
+        "Liberal": 0.5565694571,
+        "Green": 0.1376504004,
+        "Conservative": 0.1312374175
+      },
+      {
+        "Libertarian": 0.1585251242,
+        "Green": 0.49269005660000004,
+        "Liberal": 0.17677982150000002,
+        "Conservative": 0.17200495300000002
+      },
+      {
+        "Libertarian": 0.13334381580000002,
+        "Green": 0.5217194557,
+        "Liberal": 0.19748128950000002,
+        "Conservative": 0.1474554539
+      },
+      {
+        "Libertarian": 0.16698601840000002,
+        "Liberal": 0.2498048991,
+        "Green": 0.2143355459,
+        "Conservative": 0.3688735366
+      },
+      {
+        "Libertarian": 0.2413143963,
+        "Green": 0.1911314428,
+        "Liberal": 0.1344740689,
+        "Conservative": 0.4330801368
+      },
+      {
+        "Libertarian": 0.30372032520000003,
+        "Green": 0.3062987626,
+        "Liberal": 0.1165694594,
+        "Conservative": 0.2734114528
+      },
+      {
+        "Libertarian": 0.0586945117,
+        "Liberal": 0.0688063577,
+        "Green": 0.0041194973,
+        "Conservative": 0.8683796525
+      },
+      {
+        "Libertarian": 0.246530205,
+        "Liberal": 0.3094328046,
+        "Green": 0.2665084004,
+        "Conservative": 0.1775286049
+      },
+      {
+        "Libertarian": 0.236450389,
+        "Green": 0.4045763314,
+        "Liberal": 0.266767472,
+        "Conservative": 0.0922057554
+      },
+      {
+        "Libertarian": 0.2221552134,
+        "Green": 0.38837042450000003,
+        "Liberal": 0.20371194180000002,
+        "Conservative": 0.1857624501
+      },
+      {
+        "Libertarian": 0.2387797832,
+        "Green": 0.4008167982,
+        "Liberal": 0.2323259711,
+        "Conservative": 0.1280774921
+      },
+      {
+        "Libertarian": 0.22714494170000002,
+        "Liberal": 0.2549947798,
+        "Green": 0.0140347518,
+        "Conservative": 0.5038255453
+      },
+      {
+        "Libertarian": 0.7919143438,
+        "Liberal": 0.1555446982,
+        "Green": 0.0265711769,
+        "Conservative": 0.025969781
+      },
+      {
+        "Libertarian": 0.2441268265,
+        "Green": 0.2627676427,
+        "Liberal": 0.21524779500000002,
+        "Conservative": 0.2778577805
+      },
+      {
+        "Libertarian": 0.20372705160000001,
+        "Green": 0.4327588677,
+        "Liberal": 0.1612011492,
+        "Conservative": 0.20231294630000002
+      },
+      {
+        "Libertarian": 0.0931237936,
+        "Liberal": 0.5487766266,
+        "Green": 0.3212263882,
+        "Conservative": 0.0368731469
+      },
+      {
+        "Libertarian": 0.2364858389,
+        "Liberal": 0.6321863532,
+        "Green": 0.0416657813,
+        "Conservative": 0.0896620005
+      },
+      {
+        "Libertarian": 0.1421617717,
+        "Green": 0.5551598668000001,
+        "Liberal": 0.16484950480000002,
+        "Conservative": 0.1378289014
+      },
+      {
+        "Libertarian": 0.10379257800000001,
+        "Liberal": 0.054931260600000004,
+        "Green": 0.037622474100000004,
+        "Conservative": 0.8036537170000001
+      },
+      {
+        "Libertarian": 0.0051270016,
+        "Green": 0.9831044674,
+        "Liberal": 0.0099160206,
+        "Conservative": 0.0018525624
+      },
+      {
+        "Libertarian": 0.20129601660000002,
+        "Green": 0.3450701833,
+        "Liberal": 0.2260151654,
+        "Conservative": 0.22761860490000002
+      }
+    ],
+    "cnn": [
+      {
+        "Libertarian": 0.3270944357,
+        "Green": 0.141637817,
+        "Liberal": 0.13468977810000002,
+        "Conservative": 0.39657795430000004
+      },
+      {
+        "Libertarian": 0.1662633121,
+        "Green": 0.39209187030000003,
+        "Liberal": 0.26416593790000004,
+        "Conservative": 0.1774788797
+      },
+      {
+        "Libertarian": 0.2191044539,
+        "Green": 0.35321587320000003,
+        "Liberal": 0.2179353833,
+        "Conservative": 0.209744215
+      },
+      {
+        "Libertarian": 0.24234691260000002,
+        "Liberal": 0.2500092387,
+        "Green": 0.1010561958,
+        "Conservative": 0.4065876007
+      },
+      {
+        "Libertarian": 0.2051033676,
+        "Green": 0.2829334736,
+        "Liberal": 0.24697509410000001,
+        "Conservative": 0.264988184
+      },
+      {
+        "Libertarian": 0.3108477294,
+        "Green": 0.3428301811,
+        "Liberal": 0.2932120264,
+        "Conservative": 0.0531101115
+      },
+      {
+        "Libertarian": 0.2958941162,
+        "Green": 0.323321104,
+        "Liberal": 0.1272691786,
+        "Conservative": 0.25351557140000003
+      },
+      {
+        "Libertarian": 0.2731175423,
+        "Green": 0.3294118345,
+        "Liberal": 0.1876826286,
+        "Conservative": 0.20978794990000002
+      },
+      {
+        "Libertarian": 0.1553976685,
+        "Green": 0.5440990329000001,
+        "Liberal": 0.14355704190000002,
+        "Conservative": 0.1569462419
+      },
+      {
+        "Libertarian": 0.333815217,
+        "Green": 0.3302713335,
+        "Liberal": 0.2274693251,
+        "Conservative": 0.10844410210000001
+      },
+      {
+        "Libertarian": 0.2317842692,
+        "Liberal": 0.32859292630000003,
+        "Green": 0.196308285,
+        "Conservative": 0.24331451950000002
+      },
+      {
+        "Libertarian": 0.1947766542,
+        "Green": 0.3047687709,
+        "Liberal": 0.28968656060000003,
+        "Conservative": 0.21076804400000002
+      },
+      {
+        "Libertarian": 0.2566422224,
+        "Green": 0.23469850420000002,
+        "Liberal": 0.1888830364,
+        "Conservative": 0.31977617740000003
+      },
+      {
+        "Libertarian": 0.0496952273,
+        "Liberal": 0.9328734875,
+        "Green": 0.0155125214,
+        "Conservative": 0.0019187659
+      },
+      {
+        "Libertarian": 0.18567083780000002,
+        "Liberal": 0.10907888410000001,
+        "Green": 0.0965498686,
+        "Conservative": 0.6087003350000001
+      },
+      {
+        "Libertarian": 0.1354713589,
+        "Liberal": 0.1664490998,
+        "Green": 0.004213756,
+        "Conservative": 0.6938658357
+      },
+      {
+        "Libertarian": 0.1544829905,
+        "Liberal": 0.1335295886,
+        "Green": 0.0251382887,
+        "Conservative": 0.6868491173
+      },
+      {
+        "Libertarian": 0.4563756585,
+        "Green": 0.2250856012,
+        "Liberal": 0.1833575666,
+        "Conservative": 0.1351812184
+      },
+      {
+        "Libertarian": 0.14064832030000002,
+        "Green": 0.31917178630000004,
+        "Liberal": 0.31028351190000003,
+        "Conservative": 0.2298964262
+      },
+      {
+        "Libertarian": 0.44969978930000004,
+        "Liberal": 0.2268681675,
+        "Green": 0.1582534015,
+        "Conservative": 0.1651786119
+      },
+      {
+        "Libertarian": 0.15242788200000001,
+        "Green": 0.7170823216000001,
+        "Liberal": 0.0763357803,
+        "Conservative": 0.054154053300000005
+      },
+      {
+        "Libertarian": 0.2748643458,
+        "Green": 0.3101059794,
+        "Liberal": 0.1591966897,
+        "Conservative": 0.2558331192
+      },
+      {
+        "Libertarian": 0.5292305946,
+        "Liberal": 0.1911401004,
+        "Green": 0.1547749192,
+        "Conservative": 0.1248543486
+      },
+      {
+        "Libertarian": 0.21324008700000002,
+        "Green": 0.37786090370000003,
+        "Liberal": 0.3308735192,
+        "Conservative": 0.0780254975
+      },
+      {
+        "Libertarian": 0.1954497695,
+        "Green": 0.3241140842,
+        "Liberal": 0.20706936720000002,
+        "Conservative": 0.2733667195
+      },
+      {
+        "Libertarian": 0.2204990238,
+        "Green": 0.3611489236,
+        "Liberal": 0.2106202543,
+        "Conservative": 0.20773182810000002
+      },
+      {
+        "Libertarian": 0.1707367301,
+        "Green": 0.4498413801,
+        "Liberal": 0.20779149230000002,
+        "Conservative": 0.1716303825
+      },
+      {
+        "Libertarian": 0.2881064713,
+        "Green": 0.40012386440000003,
+        "Liberal": 0.1260445118,
+        "Conservative": 0.1857251078
+      },
+      {
+        "Libertarian": 0.0915048569,
+        "Liberal": 0.19123519960000002,
+        "Green": 0.011305527800000001,
+        "Conservative": 0.7059544325
+      },
+      {
+        "Libertarian": 0.29085883500000004,
+        "Liberal": 0.210999772,
+        "Green": 0.1622074246,
+        "Conservative": 0.3359339833
+      },
+      {
+        "Libertarian": 0.24776221810000001,
+        "Liberal": 0.4702244103,
+        "Green": 0.1479339153,
+        "Conservative": 0.1340794563
+      },
+      {
+        "Libertarian": 0.2426620424,
+        "Green": 0.2308784127,
+        "Liberal": 0.1267393231,
+        "Conservative": 0.3997202516
+      },
+      {
+        "Libertarian": 0.26937183740000004,
+        "Liberal": 0.33887800570000004,
+        "Green": 0.0179978535,
+        "Conservative": 0.3737523854
+      },
+      {
+        "Libertarian": 0.5142288804,
+        "Liberal": 0.2893486917,
+        "Green": 0.0773951635,
+        "Conservative": 0.1190271974
+      },
+      {
+        "Libertarian": 0.12329566480000001,
+        "Liberal": 0.3699729145,
+        "Green": 0.3524283469,
+        "Conservative": 0.1543029696
+      },
+      {
+        "Libertarian": 0.3253508806,
+        "Green": 0.2708634138,
+        "Liberal": 0.2080032527,
+        "Conservative": 0.19578239320000002
+      },
+      {
+        "Libertarian": 0.1777640432,
+        "Green": 0.3925018609,
+        "Liberal": 0.1985358149,
+        "Conservative": 0.2311982363
+      },
+      {
+        "Libertarian": 0.7168139815,
+        "Liberal": 0.0994887054,
+        "Green": 0.0313255563,
+        "Conservative": 0.1523717642
+      },
+      {
+        "Libertarian": 0.2493137419,
+        "Green": 0.32245492940000003,
+        "Liberal": 0.2570973635,
+        "Conservative": 0.17113402490000001
+      },
+      {
+        "Libertarian": 0.2776949704,
+        "Green": 0.3210840821,
+        "Liberal": 0.21756273510000002,
+        "Conservative": 0.1836582869
+      },
+      {
+        "Libertarian": 0.19975245,
+        "Green": 0.1638961136,
+        "Liberal": 0.1339937598,
+        "Conservative": 0.5023576617000001
+      },
+      {
+        "Libertarian": 0.2297341228,
+        "Green": 0.3834926188,
+        "Liberal": 0.19160516560000002,
+        "Conservative": 0.19516807790000001
+      },
+      {
+        "Libertarian": 0.289144814,
+        "Green": 0.3221189976,
+        "Liberal": 0.19442857800000002,
+        "Conservative": 0.1943076551
+      },
+      {
+        "Libertarian": 0.223213762,
+        "Green": 0.3286739886,
+        "Liberal": 0.1926843822,
+        "Conservative": 0.2554278672
+      },
+      {
+        "Libertarian": 0.10909783840000001,
+        "Green": 0.6856396794,
+        "Liberal": 0.11503205450000001,
+        "Conservative": 0.0902304649
+      },
+      {
+        "Libertarian": 0.1846799552,
+        "Green": 0.3657352626,
+        "Liberal": 0.30141642690000003,
+        "Conservative": 0.14816828070000002
+      },
+      {
+        "Libertarian": 0.2155035585,
+        "Liberal": 0.3056976199,
+        "Green": 0.0326120034,
+        "Conservative": 0.4461869001
+      },
+      {
+        "Libertarian": 0.278647393,
+        "Liberal": 0.2530925572,
+        "Green": 0.2498574406,
+        "Conservative": 0.2184025943
+      },
+      {
+        "Libertarian": 0.1877276897,
+        "Green": 0.4800282717,
+        "Liberal": 0.286241591,
+        "Conservative": 0.0460024849
+      },
+      {
+        "Libertarian": 0.0004629217,
+        "Green": 0.9919266105000001,
+        "Liberal": 0.0061168666000000005,
+        "Conservative": 0.0014936355
+      },
+      {
+        "Libertarian": 0.5372804403,
+        "Liberal": 0.3138576746,
+        "Green": 0.0526483394,
+        "Conservative": 0.09621360150000001
+      },
+      {
+        "Libertarian": 0.2106639296,
+        "Green": 0.4088485837,
+        "Liberal": 0.12793713810000001,
+        "Conservative": 0.2525503337
+      },
+      {
+        "Libertarian": 0.4070603251,
+        "Liberal": 0.31782907250000003,
+        "Green": 0.1515503973,
+        "Conservative": 0.12356016780000001
+      },
+      {
+        "Libertarian": 0.17637045680000002,
+        "Green": 0.2809066176,
+        "Liberal": 0.27002346520000003,
+        "Conservative": 0.27269959450000003
+      },
+      {
+        "Libertarian": 0.18257826570000002,
+        "Green": 0.4273680747,
+        "Liberal": 0.1607552618,
+        "Conservative": 0.2292983532
+      },
+      {
+        "Libertarian": 0.2562533915,
+        "Green": 0.2264780253,
+        "Liberal": 0.2046964467,
+        "Conservative": 0.3125721514
+      },
+      {
+        "Libertarian": 0.1252790987,
+        "Liberal": 0.5355116129,
+        "Green": 0.2432696074,
+        "Conservative": 0.0959396735
+      },
+      {
+        "Libertarian": 0.1960715801,
+        "Green": 0.39858150480000004,
+        "Liberal": 0.21451398730000001,
+        "Conservative": 0.190832898
+      },
+      {
+        "Libertarian": 0.16335733230000002,
+        "Liberal": 0.40219658610000003,
+        "Green": 0.1761585176,
+        "Conservative": 0.2582874894
+      },
+      {
+        "Libertarian": 0.10356603560000001,
+        "Green": 0.7723904252,
+        "Liberal": 0.060753073500000004,
+        "Conservative": 0.0632904172
+      },
+      {
+        "Libertarian": 0.0050196969000000004,
+        "Green": 0.9763900042,
+        "Liberal": 0.0129730906,
+        "Conservative": 0.0056171906
+      },
+      {
+        "Libertarian": 0.0547623634,
+        "Liberal": 0.6957239509,
+        "Green": 0.0844820365,
+        "Conservative": 0.16503168640000002
+      },
+      {
+        "Libertarian": 0.1489548981,
+        "Green": 0.6413676739,
+        "Liberal": 0.1320667267,
+        "Conservative": 0.07761074600000001
+      },
+      {
+        "Libertarian": 0.3316884637,
+        "Liberal": 0.3209869862,
+        "Green": 0.2268325537,
+        "Conservative": 0.1204920262
+      },
+      {
+        "Libertarian": 0.23752573130000001,
+        "Green": 0.30005028840000003,
+        "Liberal": 0.19390077890000001,
+        "Conservative": 0.268523246
+      },
+      {
+        "Libertarian": 0.7322699428,
+        "Liberal": 0.14225105940000002,
+        "Green": 0.0469619781,
+        "Conservative": 0.0785169825
+      },
+      {
+        "Libertarian": 0.4906439483,
+        "Liberal": 0.1556418091,
+        "Green": 0.1282997429,
+        "Conservative": 0.2254145592
+      },
+      {
+        "Libertarian": 0.4229506254,
+        "Liberal": 0.1177218631,
+        "Green": 0.1075095385,
+        "Conservative": 0.35181793570000003
+      },
+      {
+        "Libertarian": 0.20237135890000002,
+        "Green": 0.4101197124,
+        "Liberal": 0.1683449,
+        "Conservative": 0.21916402880000002
+      },
+      {
+        "Libertarian": 0.0015572298,
+        "Green": 0.9779757857,
+        "Liberal": 0.018910002000000002,
+        "Conservative": 0.0015569704
+      },
+      {
+        "Libertarian": 0.2434300482,
+        "Green": 0.5240712762,
+        "Liberal": 0.1021069735,
+        "Conservative": 0.1303917468
+      },
+      {
+        "Libertarian": 0.23003508150000002,
+        "Liberal": 0.4114227593,
+        "Green": 0.2755993009,
+        "Conservative": 0.0829428658
+      },
+      {
+        "Libertarian": 0.006505569,
+        "Green": 0.9808041453,
+        "Liberal": 0.0079987142,
+        "Conservative": 0.0046916264
+      },
+      {
+        "Libertarian": 0.5886090994000001,
+        "Liberal": 0.1380126774,
+        "Green": 0.08850348,
+        "Conservative": 0.18487480280000002
+      },
+      {
+        "Libertarian": 0.5755284429,
+        "Liberal": 0.3257809877,
+        "Green": 0.0336690173,
+        "Conservative": 0.0650214925
+      },
+      {
+        "Libertarian": 0.3588102758,
+        "Liberal": 0.0485188328,
+        "Green": 0.0176361389,
+        "Conservative": 0.5750347376
+      },
+      {
+        "Libertarian": 0.6024560332000001,
+        "Liberal": 0.08080551030000001,
+        "Green": 0.023740448100000002,
+        "Conservative": 0.2929979861
+      },
+      {
+        "Libertarian": 0.126375556,
+        "Green": 0.7496585846,
+        "Liberal": 0.08391013,
+        "Conservative": 0.0400556661
+      },
+      {
+        "Libertarian": 0.2899703085,
+        "Liberal": 0.358538568,
+        "Green": 0.2555208504,
+        "Conservative": 0.0959702358
+      },
+      {
+        "Libertarian": 0.350099504,
+        "Liberal": 0.3097973466,
+        "Green": 0.10769137740000001,
+        "Conservative": 0.2324118018
+      },
+      {
+        "Libertarian": 0.1722771525,
+        "Green": 0.3694830537,
+        "Liberal": 0.2563641667,
+        "Conservative": 0.2018756568
+      },
+      {
+        "Libertarian": 0.2484137565,
+        "Liberal": 0.08590056,
+        "Green": 0.0239726231,
+        "Conservative": 0.6417131424
+      },
+      {
+        "Libertarian": 0.4209242165,
+        "Liberal": 0.1067734063,
+        "Green": 0.0998885259,
+        "Conservative": 0.37241384390000004
+      },
+      {
+        "Libertarian": 0.1411297172,
+        "Liberal": 0.4722294211,
+        "Green": 0.1994688809,
+        "Conservative": 0.1871720105
+      },
+      {
+        "Libertarian": 0.0917413905,
+        "Green": 0.6929264665,
+        "Liberal": 0.0969168693,
+        "Conservative": 0.1184152365
+      },
+      {
+        "Libertarian": 0.1956436187,
+        "Green": 0.205628112,
+        "Liberal": 0.10344763850000001,
+        "Conservative": 0.49528065320000003
+      },
+      {
+        "Libertarian": 0.3428030312,
+        "Liberal": 0.3915965259,
+        "Green": 0.13522864880000002,
+        "Conservative": 0.1303718984
+      },
+      {
+        "Libertarian": 0.09911538660000001,
+        "Liberal": 0.8181646466,
+        "Green": 0.039549719500000004,
+        "Conservative": 0.0431701355
+      },
+      {
+        "Libertarian": 0.43333768840000003,
+        "Liberal": 0.2614867687,
+        "Green": 0.1873874515,
+        "Conservative": 0.11778806900000001
+      },
+      {
+        "Libertarian": 0.33156615500000003,
+        "Liberal": 0.1865553409,
+        "Green": 0.1057268903,
+        "Conservative": 0.3761516809
+      },
+      {
+        "Libertarian": 0.2410275638,
+        "Liberal": 0.20033822950000002,
+        "Green": 0.0154841999,
+        "Conservative": 0.5431500673
+      },
+      {
+        "Libertarian": 0.1772294044,
+        "Liberal": 0.1208991408,
+        "Green": 0.0099334633,
+        "Conservative": 0.6919379234
+      },
+      {
+        "Libertarian": 0.1990232617,
+        "Green": 0.37164431810000004,
+        "Liberal": 0.2552854121,
+        "Conservative": 0.1740470678
+      },
+      {
+        "Libertarian": 0.39305391910000004,
+        "Green": 0.24810379740000002,
+        "Liberal": 0.2028831244,
+        "Conservative": 0.1559591293
+      },
+      {
+        "Libertarian": 0.1898876876,
+        "Green": 0.4189285338,
+        "Liberal": 0.2476108968,
+        "Conservative": 0.1435729563
+      },
+      {
+        "Libertarian": 0.0092677539,
+        "Green": 0.9642946124,
+        "Liberal": 0.0166939683,
+        "Conservative": 0.009743715600000001
+      },
+      {
+        "Libertarian": 0.47882133720000003,
+        "Liberal": 0.1141829342,
+        "Green": 0.0663206801,
+        "Conservative": 0.3406750262
+      },
+      {
+        "Libertarian": 0.035717804,
+        "Green": 0.9117138386,
+        "Liberal": 0.0176459495,
+        "Conservative": 0.0349224545
+      },
+      {
+        "Libertarian": 0.48758021,
+        "Green": 0.10678206380000001,
+        "Liberal": 0.08929146830000001,
+        "Conservative": 0.3163462281
+      }
+    ],
+    "foxnews": [
+      {
+        "Libertarian": 0.2781178951,
+        "Liberal": 0.39622491600000004,
+        "Green": 0.22866623100000003,
+        "Conservative": 0.0969909355
+      },
+      {
+        "Libertarian": 0.2084788531,
+        "Liberal": 0.41781046990000004,
+        "Green": 0.051513548900000004,
+        "Conservative": 0.32219704990000003
+      },
+      {
+        "Libertarian": 0.2128344178,
+        "Green": 0.5487673283,
+        "Liberal": 0.1379863024,
+        "Conservative": 0.1004119366
+      },
+      {
+        "Libertarian": 0.2684175968,
+        "Green": 0.2622134984,
+        "Liberal": 0.013571615300000001,
+        "Conservative": 0.45579728480000004
+      },
+      {
+        "Libertarian": 0.3086153269,
+        "Green": 0.236087501,
+        "Liberal": 0.12397503110000001,
+        "Conservative": 0.3313221931
+      },
+      {
+        "Libertarian": 0.1962000579,
+        "Liberal": 0.2791107893,
+        "Green": 0.2573212683,
+        "Conservative": 0.2673678398
+      },
+      {
+        "Libertarian": 0.1517429948,
+        "Green": 0.3970861435,
+        "Liberal": 0.24049645660000002,
+        "Conservative": 0.21067450940000002
+      },
+      {
+        "Libertarian": 0.2583134174,
+        "Liberal": 0.1860872507,
+        "Green": 0.0149167087,
+        "Conservative": 0.5406825542
+      },
+      {
+        "Libertarian": 0.0190895423,
+        "Liberal": 0.0036309909,
+        "Green": 0.0006439962,
+        "Conservative": 0.9766354561
+      },
+      {
+        "Libertarian": 0.18615370990000002,
+        "Green": 0.2936880887,
+        "Liberal": 0.2822908163,
+        "Conservative": 0.23786741500000003
+      },
+      {
+        "Libertarian": 0.3051940799,
+        "Green": 0.0972555429,
+        "Liberal": 0.0576931164,
+        "Conservative": 0.5398572683
+      },
+      {
+        "Libertarian": 0.1681245565,
+        "Liberal": 0.509534359,
+        "Green": 0.035100869800000004,
+        "Conservative": 0.287240237
+      },
+      {
+        "Libertarian": 0.2460468411,
+        "Liberal": 0.2410946935,
+        "Green": 0.1601553708,
+        "Conservative": 0.3527031243
+      },
+      {
+        "Libertarian": 0.4158083797,
+        "Liberal": 0.2467521429,
+        "Green": 0.21285814050000001,
+        "Conservative": 0.1245814189
+      },
+      {
+        "Libertarian": 0.6368409395,
+        "Liberal": 0.1324717253,
+        "Green": 0.0271889176,
+        "Conservative": 0.2034984082
+      },
+      {
+        "Libertarian": 0.2522302866,
+        "Green": 0.3922682703,
+        "Liberal": 0.2271361351,
+        "Conservative": 0.1283653677
+      },
+      {
+        "Libertarian": 0.4397710562,
+        "Liberal": 0.1606379151,
+        "Green": 0.13841713960000002,
+        "Conservative": 0.26117387410000004
+      },
+      {
+        "Libertarian": 0.2380041629,
+        "Liberal": 0.2566935718,
+        "Green": 0.1301962286,
+        "Conservative": 0.3751060665
+      },
+      {
+        "Libertarian": 0.30736699700000003,
+        "Liberal": 0.3307055235,
+        "Green": 0.268553406,
+        "Conservative": 0.09337411080000001
+      },
+      {
+        "Libertarian": 0.0136637809,
+        "Green": 0.8697819710000001,
+        "Liberal": 0.09062626210000001,
+        "Conservative": 0.0259279143
+      },
+      {
+        "Libertarian": 0.2309238166,
+        "Green": 0.2991900444,
+        "Liberal": 0.28125655650000003,
+        "Conservative": 0.1886296123
+      },
+      {
+        "Libertarian": 0.2790912688,
+        "Green": 0.2624099851,
+        "Liberal": 0.1832356751,
+        "Conservative": 0.2752630413
+      },
+      {
+        "Libertarian": 0.1771128476,
+        "Green": 0.2941455543,
+        "Liberal": 0.2745184898,
+        "Conservative": 0.2542231679
+      },
+      {
+        "Libertarian": 0.6829878688000001,
+        "Liberal": 0.0897889733,
+        "Green": 0.0797179192,
+        "Conservative": 0.1475052685
+      },
+      {
+        "Libertarian": 0.13439677660000002,
+        "Liberal": 0.3489153981,
+        "Green": 0.19891572,
+        "Conservative": 0.31777215000000003
+      },
+      {
+        "Libertarian": 0.30024188760000003,
+        "Green": 0.2837802172,
+        "Liberal": 0.1986702234,
+        "Conservative": 0.2173077017
+      },
+      {
+        "Libertarian": 0.226204291,
+        "Green": 0.13963738080000002,
+        "Liberal": 0.09996398540000001,
+        "Conservative": 0.5341943502000001
+      },
+      {
+        "Libertarian": 0.2298375219,
+        "Green": 0.23565088210000001,
+        "Liberal": 0.180606246,
+        "Conservative": 0.35390532020000004
+      },
+      {
+        "Libertarian": 0.1967497617,
+        "Green": 0.4219542444,
+        "Liberal": 0.1995042562,
+        "Conservative": 0.1817917973
+      },
+      {
+        "Libertarian": 0.2989754975,
+        "Liberal": 0.1969670802,
+        "Green": 0.1751499772,
+        "Conservative": 0.3289074004
+      },
+      {
+        "Libertarian": 0.1860142648,
+        "Green": 0.337849021,
+        "Liberal": 0.2824350297,
+        "Conservative": 0.1937017292
+      },
+      {
+        "Libertarian": 0.2073895633,
+        "Green": 0.38604506850000003,
+        "Liberal": 0.2028550804,
+        "Conservative": 0.2037103027
+      },
+      {
+        "Libertarian": 0.3013368249,
+        "Liberal": 0.23050799970000002,
+        "Green": 0.223261863,
+        "Conservative": 0.2448932678
+      },
+      {
+        "Libertarian": 0.2500739694,
+        "Liberal": 0.238005355,
+        "Green": 0.21754553910000002,
+        "Conservative": 0.2943751812
+      },
+      {
+        "Libertarian": 0.35606625680000004,
+        "Liberal": 0.24268703160000002,
+        "Green": 0.1231109574,
+        "Conservative": 0.2781357467
+      },
+      {
+        "Libertarian": 0.2221036106,
+        "Liberal": 0.2994294763,
+        "Green": 0.292660892,
+        "Conservative": 0.1858060062
+      },
+      {
+        "Libertarian": 0.4796612263,
+        "Liberal": 0.287435472,
+        "Green": 0.0726652518,
+        "Conservative": 0.16023808720000002
+      },
+      {
+        "Libertarian": 0.23341028390000002,
+        "Green": 0.2988550663,
+        "Liberal": 0.17933709920000002,
+        "Conservative": 0.288397491
+      },
+      {
+        "Libertarian": 0.3635993004,
+        "Green": 0.2231614292,
+        "Liberal": 0.1656731516,
+        "Conservative": 0.2475661337
+      },
+      {
+        "Libertarian": 0.3915465772,
+        "Liberal": 0.1832548976,
+        "Green": 0.1484212577,
+        "Conservative": 0.27677726750000003
+      },
+      {
+        "Libertarian": 0.6290997863000001,
+        "Liberal": 0.2180596888,
+        "Green": 0.11098084600000001,
+        "Conservative": 0.0418596938
+      },
+      {
+        "Libertarian": 0.013393647000000002,
+        "Green": 0.9590263367,
+        "Liberal": 0.018160129,
+        "Conservative": 0.009419834200000001
+      },
+      {
+        "Libertarian": 0.20738767090000002,
+        "Green": 0.4488924742,
+        "Liberal": 0.1594943255,
+        "Conservative": 0.1842256039
+      },
+      {
+        "Libertarian": 0.1644189656,
+        "Green": 0.3559781313,
+        "Liberal": 0.3494949341,
+        "Conservative": 0.1301079094
+      },
+      {
+        "Libertarian": 0.2788870335,
+        "Liberal": 0.2205107808,
+        "Green": 0.16936808820000002,
+        "Conservative": 0.33123415710000004
+      },
+      {
+        "Libertarian": 0.3033733368,
+        "Liberal": 0.20030900840000002,
+        "Green": 0.0779961795,
+        "Conservative": 0.4183215201
+      },
+      {
+        "Libertarian": 0.287402302,
+        "Liberal": 0.1630887687,
+        "Green": 0.030846471,
+        "Conservative": 0.5186624527
+      },
+      {
+        "Libertarian": 0.26316720250000003,
+        "Green": 0.1936395913,
+        "Liberal": 0.14661195870000002,
+        "Conservative": 0.3965812624
+      },
+      {
+        "Libertarian": 0.1323009431,
+        "Liberal": 0.1146223098,
+        "Green": 0.0537085719,
+        "Conservative": 0.6993681192
+      },
+      {
+        "Libertarian": 0.2952162027,
+        "Liberal": 0.2860237062,
+        "Green": 0.1923916191,
+        "Conservative": 0.2263684571
+      },
+      {
+        "Libertarian": 0.275701046,
+        "Liberal": 0.40457469220000003,
+        "Green": 0.1207504123,
+        "Conservative": 0.1989738345
+      },
+      {
+        "Libertarian": 0.6453721523,
+        "Liberal": 0.1516039521,
+        "Green": 0.0201598015,
+        "Conservative": 0.1828641295
+      },
+      {
+        "Libertarian": 0.2320165783,
+        "Green": 0.25585594770000003,
+        "Liberal": 0.2502602935,
+        "Conservative": 0.2618672848
+      },
+      {
+        "Libertarian": 0.4343217015,
+        "Liberal": 0.14845770600000002,
+        "Green": 0.10755351190000001,
+        "Conservative": 0.3096671402
+      },
+      {
+        "Libertarian": 0.1473650336,
+        "Green": 0.3726744652,
+        "Liberal": 0.2645268738,
+        "Conservative": 0.2154336125
+      },
+      {
+        "Libertarian": 0.5364414454,
+        "Liberal": 0.143273741,
+        "Green": 0.0291092563,
+        "Conservative": 0.2911756039
+      },
+      {
+        "Libertarian": 0.1633617431,
+        "Green": 0.46917474270000004,
+        "Liberal": 0.2234146744,
+        "Conservative": 0.1440487504
+      },
+      {
+        "Libertarian": 0.207311824,
+        "Green": 0.4051727057,
+        "Liberal": 0.1869897544,
+        "Conservative": 0.2005257159
+      },
+      {
+        "Libertarian": 0.4318987429,
+        "Liberal": 0.16676287350000002,
+        "Green": 0.1156709939,
+        "Conservative": 0.2856673598
+      },
+      {
+        "Libertarian": 0.280436784,
+        "Liberal": 0.21659049390000001,
+        "Green": 0.08441242580000001,
+        "Conservative": 0.4185603261
+      },
+      {
+        "Libertarian": 0.1911809593,
+        "Green": 0.3828618526,
+        "Liberal": 0.1219679862,
+        "Conservative": 0.3039892316
+      },
+      {
+        "Libertarian": 0.052609954,
+        "Green": 0.7564666867000001,
+        "Liberal": 0.1470903903,
+        "Conservative": 0.0438330024
+      },
+      {
+        "Libertarian": 0.5052288175,
+        "Green": 0.17519471050000002,
+        "Liberal": 0.10870700330000001,
+        "Conservative": 0.2108695209
+      },
+      {
+        "Libertarian": 0.2191226333,
+        "Green": 0.363244921,
+        "Liberal": 0.1333009899,
+        "Conservative": 0.2843315005
+      },
+      {
+        "Libertarian": 0.23775500060000002,
+        "Green": 0.4300630093,
+        "Liberal": 0.1863946319,
+        "Conservative": 0.1457872987
+      },
+      {
+        "Libertarian": 0.2059087604,
+        "Green": 0.4289404452,
+        "Liberal": 0.21165238320000002,
+        "Conservative": 0.1534983665
+      },
+      {
+        "Libertarian": 0.2735611498,
+        "Green": 0.41024020310000003,
+        "Liberal": 0.2046728283,
+        "Conservative": 0.11152584850000001
+      },
+      {
+        "Libertarian": 0.4653491974,
+        "Liberal": 0.18408364060000001,
+        "Green": 0.1034727767,
+        "Conservative": 0.24709433320000002
+      },
+      {
+        "Libertarian": 0.2842848301,
+        "Liberal": 0.3844397068,
+        "Green": 0.026488868500000002,
+        "Conservative": 0.3047866821
+      },
+      {
+        "Libertarian": 0.1950073242,
+        "Green": 0.5158622265,
+        "Liberal": 0.12891969080000001,
+        "Conservative": 0.1602107435
+      },
+      {
+        "Libertarian": 0.1162149757,
+        "Liberal": 0.0482578911,
+        "Green": 0.011427223700000001,
+        "Conservative": 0.8240998387
+      },
+      {
+        "Libertarian": 0.10218746220000001,
+        "Liberal": 0.3112403452,
+        "Green": 0.1784067154,
+        "Conservative": 0.4081654847
+      },
+      {
+        "Libertarian": 0.0381201617,
+        "Liberal": 0.043912507600000004,
+        "Green": 0.001224121,
+        "Conservative": 0.9167432785
+      },
+      {
+        "Libertarian": 0.18408732120000001,
+        "Green": 0.4518499076,
+        "Liberal": 0.1916977763,
+        "Conservative": 0.1723650843
+      },
+      {
+        "Libertarian": 0.2510682046,
+        "Green": 0.299131602,
+        "Liberal": 0.1595449746,
+        "Conservative": 0.2902552187
+      },
+      {
+        "Libertarian": 0.1682750732,
+        "Liberal": 0.34847941990000003,
+        "Green": 0.2164331377,
+        "Conservative": 0.2668122947
+      },
+      {
+        "Libertarian": 0.1943256706,
+        "Green": 0.4064936638,
+        "Liberal": 0.20872963960000002,
+        "Conservative": 0.19045108560000001
+      },
+      {
+        "Libertarian": 0.2840851247,
+        "Green": 0.3572737277,
+        "Liberal": 0.1974459141,
+        "Conservative": 0.1611953676
+      },
+      {
+        "Libertarian": 0.1491660029,
+        "Green": 0.5607683063000001,
+        "Liberal": 0.1574390382,
+        "Conservative": 0.132626608
+      },
+      {
+        "Libertarian": 0.2031291127,
+        "Green": 0.2760484815,
+        "Liberal": 0.1419998854,
+        "Conservative": 0.3788225055
+      },
+      {
+        "Libertarian": 0.49029728770000003,
+        "Green": 0.1189852953,
+        "Liberal": 0.0519720092,
+        "Conservative": 0.3387454152
+      },
+      {
+        "Libertarian": 0.2066176236,
+        "Green": 0.4357932806,
+        "Liberal": 0.183411032,
+        "Conservative": 0.17417792980000002
+      },
+      {
+        "Libertarian": 0.1746688783,
+        "Green": 0.4446400702,
+        "Liberal": 0.2259715348,
+        "Conservative": 0.15471947190000002
+      },
+      {
+        "Libertarian": 0.2119926959,
+        "Liberal": 0.2809609771,
+        "Green": 0.0609774105,
+        "Conservative": 0.44606891270000004
+      },
+      {
+        "Libertarian": 0.5549690723,
+        "Liberal": 0.1633335501,
+        "Green": 0.0446163528,
+        "Conservative": 0.2370810807
+      },
+      {
+        "Libertarian": 0.20219434800000002,
+        "Green": 0.581723094,
+        "Liberal": 0.086480841,
+        "Conservative": 0.1296017021
+      },
+      {
+        "Libertarian": 0.18831847610000002,
+        "Liberal": 0.32105883960000003,
+        "Green": 0.1287149191,
+        "Conservative": 0.36190778020000003
+      },
+      {
+        "Libertarian": 0.0971747711,
+        "Liberal": 0.45315173270000003,
+        "Green": 0.0363707393,
+        "Conservative": 0.4133027792
+      },
+      {
+        "Libertarian": 0.5867070556,
+        "Liberal": 0.21185506880000002,
+        "Green": 0.0402932726,
+        "Conservative": 0.1611446738
+      },
+      {
+        "Libertarian": 0.2563083768,
+        "Liberal": 0.12157695,
+        "Green": 0.0381869078,
+        "Conservative": 0.5839276910000001
+      },
+      {
+        "Libertarian": 0.0951125473,
+        "Liberal": 0.011815506,
+        "Green": 0.0010854427,
+        "Conservative": 0.8919864297000001
+      },
+      {
+        "Libertarian": 0.2251587957,
+        "Green": 0.46386453510000003,
+        "Liberal": 0.2094725966,
+        "Conservative": 0.10150408
+      },
+      {
+        "Libertarian": 0.15879668300000002,
+        "Liberal": 0.19885623460000001,
+        "Green": 0.0060474877000000005,
+        "Conservative": 0.6362996697000001
+      },
+      {
+        "Libertarian": 0.3542762399,
+        "Liberal": 0.2732738853,
+        "Green": 0.1710736156,
+        "Conservative": 0.2013762891
+      },
+      {
+        "Libertarian": 0.3807979822,
+        "Liberal": 0.3089538515,
+        "Green": 0.0918759331,
+        "Conservative": 0.2183722258
+      },
+      {
+        "Libertarian": 0.1429717243,
+        "Green": 0.5340865850000001,
+        "Liberal": 0.1045470089,
+        "Conservative": 0.2183947712
+      },
+      {
+        "Libertarian": 0.3678386509,
+        "Liberal": 0.2853636444,
+        "Green": 0.2532115281,
+        "Conservative": 0.0935862139
+      },
+      {
+        "Libertarian": 0.26472070810000004,
+        "Liberal": 0.21590821440000002,
+        "Green": 0.201199919,
+        "Conservative": 0.3181711733
+      },
+      {
+        "Libertarian": 0.5989537835000001,
+        "Liberal": 0.0366124064,
+        "Green": 0.0192320105,
+        "Conservative": 0.3452018499
+      },
+      {
+        "Libertarian": 0.6192142367,
+        "Liberal": 0.08739978820000001,
+        "Green": 0.0407361872,
+        "Conservative": 0.2526498437
+      }
+    ],
+    "msnbc": [
+      {
+        "Libertarian": 0.307411164,
+        "Liberal": 0.42679178710000004,
+        "Green": 0.1618120074,
+        "Conservative": 0.1039850041
+      },
+      {
+        "Libertarian": 0.17698225380000002,
+        "Green": 0.49172815680000004,
+        "Liberal": 0.1461311877,
+        "Conservative": 0.1851584315
+      },
+      {
+        "Libertarian": 0.18118192260000002,
+        "Green": 0.4090602696,
+        "Liberal": 0.18352250750000002,
+        "Conservative": 0.2262353152
+      },
+      {
+        "Libertarian": 0.10176847130000001,
+        "Liberal": 0.0582291447,
+        "Green": 0.0048075006,
+        "Conservative": 0.8351948857
+      },
+      {
+        "Libertarian": 0.48941257600000004,
+        "Liberal": 0.1121374816,
+        "Green": 0.0131233921,
+        "Conservative": 0.3853264749
+      },
+      {
+        "Libertarian": 0.2056335211,
+        "Green": 0.3757674694,
+        "Liberal": 0.2171146274,
+        "Conservative": 0.2014844269
+      },
+      {
+        "Libertarian": 0.2639533579,
+        "Green": 0.46480244400000004,
+        "Liberal": 0.1803117096,
+        "Conservative": 0.0909323692
+      },
+      {
+        "Libertarian": 0.1856751889,
+        "Liberal": 0.3101266026,
+        "Green": 0.1988247931,
+        "Conservative": 0.3053734004
+      },
+      {
+        "Libertarian": 0.1507090479,
+        "Green": 0.3216427267,
+        "Liberal": 0.2110105008,
+        "Conservative": 0.3166377842
+      },
+      {
+        "Libertarian": 0.2042814791,
+        "Green": 0.3294480145,
+        "Liberal": 0.25421437620000004,
+        "Conservative": 0.21205618980000002
+      },
+      {
+        "Libertarian": 0.2717986703,
+        "Green": 0.31736466290000004,
+        "Liberal": 0.2538962066,
+        "Conservative": 0.1569405049
+      },
+      {
+        "Libertarian": 0.3356350064,
+        "Liberal": 0.3632471859,
+        "Green": 0.15445961060000002,
+        "Conservative": 0.14665819700000002
+      },
+      {
+        "Libertarian": 0.2027894109,
+        "Green": 0.4219019711,
+        "Liberal": 0.2946176827,
+        "Conservative": 0.0806909204
+      },
+      {
+        "Libertarian": 0.4276914895,
+        "Liberal": 0.1988040358,
+        "Green": 0.0488008894,
+        "Conservative": 0.32470360400000003
+      },
+      {
+        "Libertarian": 0.3637599349,
+        "Green": 0.31940847640000003,
+        "Liberal": 0.15949220960000002,
+        "Conservative": 0.1573394537
+      },
+      {
+        "Libertarian": 0.17928195,
+        "Green": 0.35113614800000004,
+        "Liberal": 0.25759133700000003,
+        "Conservative": 0.2119905949
+      },
+      {
+        "Libertarian": 0.1937274039,
+        "Liberal": 0.3001574278,
+        "Green": 0.2799564004,
+        "Conservative": 0.2261587083
+      },
+      {
+        "Libertarian": 0.3605920076,
+        "Green": 0.2609092891,
+        "Liberal": 0.19456997510000001,
+        "Conservative": 0.1839287877
+      },
+      {
+        "Libertarian": 0.37225899100000004,
+        "Green": 0.2300462872,
+        "Liberal": 0.17673981190000002,
+        "Conservative": 0.2209548205
+      },
+      {
+        "Libertarian": 0.1992222667,
+        "Liberal": 0.3391009867,
+        "Green": 0.1943050474,
+        "Conservative": 0.2673716843
+      },
+      {
+        "Libertarian": 0.2379601002,
+        "Green": 0.2960763872,
+        "Liberal": 0.25198674200000004,
+        "Conservative": 0.21397678550000002
+      },
+      {
+        "Libertarian": 0.4566521347,
+        "Liberal": 0.2463482022,
+        "Green": 0.044481381800000004,
+        "Conservative": 0.2525183856
+      },
+      {
+        "Libertarian": 0.6103768349,
+        "Green": 0.1728300303,
+        "Liberal": 0.0994110852,
+        "Conservative": 0.11738205700000001
+      },
+      {
+        "Libertarian": 0.192361936,
+        "Green": 0.4389688969,
+        "Liberal": 0.21177031100000002,
+        "Conservative": 0.1568988562
+      },
+      {
+        "Libertarian": 0.1809085608,
+        "Green": 0.4166032076,
+        "Liberal": 0.3016029596,
+        "Conservative": 0.10088527200000001
+      },
+      {
+        "Libertarian": 0.683678925,
+        "Liberal": 0.0383904874,
+        "Green": 0.0230264962,
+        "Conservative": 0.25490409140000003
+      },
+      {
+        "Libertarian": 0.2264523208,
+        "Green": 0.319422543,
+        "Liberal": 0.21427318450000002,
+        "Conservative": 0.23985201120000002
+      },
+      {
+        "Libertarian": 0.1773802042,
+        "Green": 0.3776018322,
+        "Liberal": 0.21711029110000002,
+        "Conservative": 0.2279077172
+      },
+      {
+        "Libertarian": 0.1574990004,
+        "Green": 0.3890853226,
+        "Liberal": 0.3180007935,
+        "Conservative": 0.1354148537
+      },
+      {
+        "Libertarian": 0.2715322673,
+        "Liberal": 0.2741760015,
+        "Green": 0.1392551661,
+        "Conservative": 0.3150366545
+      },
+      {
+        "Libertarian": 0.5389412642,
+        "Liberal": 0.1318958849,
+        "Green": 0.0514365435,
+        "Conservative": 0.2777263522
+      },
+      {
+        "Libertarian": 0.17897549270000002,
+        "Liberal": 0.3351095617,
+        "Green": 0.0351498649,
+        "Conservative": 0.45076507330000004
+      },
+      {
+        "Libertarian": 0.1587417871,
+        "Green": 0.3157985806,
+        "Liberal": 0.26458469030000004,
+        "Conservative": 0.2608750165
+      },
+      {
+        "Libertarian": 0.2395938933,
+        "Liberal": 0.2877500951,
+        "Green": 0.2728177607,
+        "Conservative": 0.1998382658
+      },
+      {
+        "Libertarian": 0.2410172224,
+        "Green": 0.2436459363,
+        "Liberal": 0.2336931378,
+        "Conservative": 0.28164365890000004
+      },
+      {
+        "Libertarian": 0.2590691745,
+        "Liberal": 0.34697535630000004,
+        "Green": 0.28490358590000003,
+        "Conservative": 0.1090518758
+      },
+      {
+        "Libertarian": 0.2508031726,
+        "Liberal": 0.2868576646,
+        "Green": 0.17454609270000002,
+        "Conservative": 0.2877930403
+      },
+      {
+        "Libertarian": 0.3317210376,
+        "Liberal": 0.3104434907,
+        "Green": 0.0448691957,
+        "Conservative": 0.3129662871
+      },
+      {
+        "Libertarian": 0.3154759109,
+        "Green": 0.3218747973,
+        "Liberal": 0.18015116450000002,
+        "Conservative": 0.18249811230000001
+      },
+      {
+        "Libertarian": 0.207517162,
+        "Liberal": 0.2008439153,
+        "Green": 0.078357406,
+        "Conservative": 0.5132815838
+      },
+      {
+        "Libertarian": 0.3372893929,
+        "Liberal": 0.2547238171,
+        "Green": 0.0690488517,
+        "Conservative": 0.33893796800000003
+      },
+      {
+        "Libertarian": 0.198567763,
+        "Liberal": 0.2908445597,
+        "Green": 0.263171047,
+        "Conservative": 0.2474166304
+      },
+      {
+        "Libertarian": 0.1546004266,
+        "Green": 0.3431826234,
+        "Liberal": 0.31763201950000003,
+        "Conservative": 0.1845849305
+      },
+      {
+        "Libertarian": 0.4359758496,
+        "Liberal": 0.21764285860000002,
+        "Green": 0.0740990639,
+        "Conservative": 0.2722821534
+      },
+      {
+        "Libertarian": 0.1730505973,
+        "Green": 0.3807289004,
+        "Liberal": 0.2756301165,
+        "Conservative": 0.1705904305
+      },
+      {
+        "Libertarian": 0.3627363145,
+        "Liberal": 0.1873043627,
+        "Green": 0.1839939803,
+        "Conservative": 0.2659654021
+      },
+      {
+        "Libertarian": 0.3281938136,
+        "Liberal": 0.27917099,
+        "Green": 0.08461058140000001,
+        "Conservative": 0.30802464490000003
+      },
+      {
+        "Libertarian": 0.20698446040000001,
+        "Green": 0.3427729905,
+        "Liberal": 0.20116086300000002,
+        "Conservative": 0.2490817159
+      },
+      {
+        "Libertarian": 0.19362187390000002,
+        "Liberal": 0.35267072920000003,
+        "Green": 0.2985256016,
+        "Conservative": 0.1551818848
+      },
+      {
+        "Libertarian": 0.3921998143,
+        "Liberal": 0.21146680410000002,
+        "Green": 0.15854793790000002,
+        "Conservative": 0.23778541390000002
+      },
+      {
+        "Libertarian": 0.5679872632,
+        "Green": 0.1840171516,
+        "Liberal": 0.123246029,
+        "Conservative": 0.1247496307
+      },
+      {
+        "Libertarian": 0.23926261070000002,
+        "Green": 0.19576306640000002,
+        "Liberal": 0.11156498640000001,
+        "Conservative": 0.45340925460000003
+      },
+      {
+        "Libertarian": 0.1577044874,
+        "Green": 0.3710068762,
+        "Liberal": 0.3062268496,
+        "Conservative": 0.1650617868
+      },
+      {
+        "Libertarian": 0.2661311328,
+        "Green": 0.33934411410000004,
+        "Liberal": 0.1802984923,
+        "Conservative": 0.2142262757
+      },
+      {
+        "Libertarian": 0.310765475,
+        "Green": 0.3736611903,
+        "Liberal": 0.15559650960000002,
+        "Conservative": 0.15997678040000002
+      },
+      {
+        "Libertarian": 0.2291454077,
+        "Liberal": 0.12622295320000002,
+        "Green": 0.0276319794,
+        "Conservative": 0.6169996262
+      },
+      {
+        "Libertarian": 0.090059042,
+        "Green": 0.4651578367,
+        "Liberal": 0.1257557869,
+        "Conservative": 0.31902733450000004
+      },
+      {
+        "Libertarian": 0.1263242662,
+        "Liberal": 0.5972934365,
+        "Green": 0.0732436031,
+        "Conservative": 0.20313872400000002
+      },
+      {
+        "Libertarian": 0.20270860200000002,
+        "Green": 0.4053260386,
+        "Liberal": 0.2138270885,
+        "Conservative": 0.17813834550000002
+      },
+      {
+        "Libertarian": 0.0763426125,
+        "Liberal": 0.5408785939,
+        "Green": 0.0602408163,
+        "Conservative": 0.32253798840000003
+      },
+      {
+        "Libertarian": 0.2033839673,
+        "Green": 0.2927867174,
+        "Liberal": 0.21320131420000002,
+        "Conservative": 0.29062801600000004
+      },
+      {
+        "Libertarian": 0.0096311821,
+        "Green": 0.9501054883000001,
+        "Liberal": 0.0268648621,
+        "Conservative": 0.0133984806
+      },
+      {
+        "Libertarian": 0.24060262740000002,
+        "Green": 0.2088396996,
+        "Liberal": 0.1955890059,
+        "Conservative": 0.354968667
+      },
+      {
+        "Libertarian": 0.2760893404,
+        "Liberal": 0.2774885595,
+        "Green": 0.1721633375,
+        "Conservative": 0.27425882220000003
+      },
+      {
+        "Libertarian": 0.2011127621,
+        "Green": 0.3638509214,
+        "Liberal": 0.23210093380000002,
+        "Conservative": 0.20293544230000002
+      },
+      {
+        "Libertarian": 0.6279632449,
+        "Liberal": 0.0911291689,
+        "Green": 0.074082993,
+        "Conservative": 0.2068246454
+      },
+      {
+        "Libertarian": 0.3740647435,
+        "Liberal": 0.1902399808,
+        "Green": 0.1233511865,
+        "Conservative": 0.3123441339
+      },
+      {
+        "Libertarian": 0.1603485644,
+        "Green": 0.4240794182,
+        "Liberal": 0.2726585865,
+        "Conservative": 0.14291341600000002
+      },
+      {
+        "Libertarian": 0.3880670369,
+        "Liberal": 0.2273283452,
+        "Green": 0.12928320470000002,
+        "Conservative": 0.2553213239
+      },
+      {
+        "Libertarian": 0.1376934648,
+        "Green": 0.3369614482,
+        "Liberal": 0.3037345111,
+        "Conservative": 0.2216105908
+      },
+      {
+        "Libertarian": 0.258762151,
+        "Liberal": 0.1997573078,
+        "Green": 0.0053466647,
+        "Conservative": 0.536133945
+      },
+      {
+        "Libertarian": 0.3095061779,
+        "Green": 0.4257501066,
+        "Liberal": 0.1335934103,
+        "Conservative": 0.1311502904
+      },
+      {
+        "Libertarian": 0.4036943018,
+        "Green": 0.3050991297,
+        "Liberal": 0.1941415966,
+        "Conservative": 0.09706493470000001
+      },
+      {
+        "Libertarian": 0.6452670097000001,
+        "Liberal": 0.0758853257,
+        "Green": 0.0662557706,
+        "Conservative": 0.2125918716
+      },
+      {
+        "Libertarian": 0.3261032104,
+        "Liberal": 0.21286706630000002,
+        "Green": 0.013963399500000001,
+        "Conservative": 0.4470663369
+      },
+      {
+        "Libertarian": 0.5777940154,
+        "Liberal": 0.057019054900000005,
+        "Green": 0.0188429616,
+        "Conservative": 0.3463440239
+      },
+      {
+        "Libertarian": 0.2089926302,
+        "Green": 0.30892771480000003,
+        "Liberal": 0.2672534883,
+        "Conservative": 0.2148261666
+      },
+      {
+        "Libertarian": 0.4970171452,
+        "Liberal": 0.0461511873,
+        "Green": 0.0090570915,
+        "Conservative": 0.4477745295
+      },
+      {
+        "Libertarian": 0.3373602927,
+        "Liberal": 0.2199798524,
+        "Green": 0.1770794839,
+        "Conservative": 0.2655803561
+      },
+      {
+        "Libertarian": 0.5013857484,
+        "Liberal": 0.1103743613,
+        "Green": 0.1025023162,
+        "Conservative": 0.2857374847
+      },
+      {
+        "Libertarian": 0.2864937186,
+        "Green": 0.21079608800000002,
+        "Liberal": 0.17970876400000002,
+        "Conservative": 0.3230014741
+      },
+      {
+        "Libertarian": 0.5100761056,
+        "Liberal": 0.26353880760000004,
+        "Green": 0.1311303675,
+        "Conservative": 0.0952547118
+      },
+      {
+        "Libertarian": 0.1694536656,
+        "Green": 0.4540883899,
+        "Liberal": 0.2591411769,
+        "Conservative": 0.11731677500000001
+      },
+      {
+        "Libertarian": 0.4866597056,
+        "Liberal": 0.35288810730000003,
+        "Green": 0.08348397910000001,
+        "Conservative": 0.0769682378
+      },
+      {
+        "Libertarian": 0.1800656319,
+        "Liberal": 0.2744579017,
+        "Green": 0.2394511551,
+        "Conservative": 0.30602535610000003
+      },
+      {
+        "Libertarian": 0.19093406200000002,
+        "Green": 0.3279052675,
+        "Liberal": 0.2905063033,
+        "Conservative": 0.19065441190000001
+      },
+      {
+        "Libertarian": 0.3716216385,
+        "Green": 0.27697843310000003,
+        "Liberal": 0.1679951549,
+        "Conservative": 0.1834047735
+      },
+      {
+        "Libertarian": 0.3438278139,
+        "Liberal": 0.3060162663,
+        "Green": 0.1833108068,
+        "Conservative": 0.1668450832
+      },
+      {
+        "Libertarian": 0.0901469365,
+        "Liberal": 0.30340898040000003,
+        "Green": 0.0530766435,
+        "Conservative": 0.5533674359
+      },
+      {
+        "Libertarian": 0.1837972701,
+        "Liberal": 0.2457779497,
+        "Green": 0.1260107607,
+        "Conservative": 0.44441407920000003
+      },
+      {
+        "Libertarian": 0.2088890821,
+        "Green": 0.2881993949,
+        "Liberal": 0.2659066319,
+        "Conservative": 0.23700492080000002
+      },
+      {
+        "Libertarian": 0.1933722198,
+        "Green": 0.5038319826000001,
+        "Liberal": 0.16084139050000001,
+        "Conservative": 0.14195437730000002
+      },
+      {
+        "Libertarian": 0.6822986603,
+        "Liberal": 0.1647574306,
+        "Green": 0.0513923094,
+        "Conservative": 0.1015516296
+      },
+      {
+        "Libertarian": 0.2969884872,
+        "Green": 0.2762461305,
+        "Liberal": 0.1762040555,
+        "Conservative": 0.2505613863
+      },
+      {
+        "Libertarian": 0.1699086577,
+        "Liberal": 0.2559932768,
+        "Green": 0.0085849175,
+        "Conservative": 0.5655132532
+      },
+      {
+        "Libertarian": 0.2502022982,
+        "Liberal": 0.2404455245,
+        "Green": 0.15646435320000002,
+        "Conservative": 0.3528878689
+      },
+      {
+        "Libertarian": 0.0700766444,
+        "Liberal": 0.6048942804,
+        "Green": 0.033420804900000003,
+        "Conservative": 0.2916083336
+      }
+    ],
+    "washingtonpost": [
+      {
+        "Libertarian": 0.2207402736,
+        "Green": 0.3550253212,
+        "Liberal": 0.1761980504,
+        "Conservative": 0.24803638460000002
+      },
+      {
+        "Libertarian": 0.4718048871,
+        "Green": 0.2875788808,
+        "Liberal": 0.1411588043,
+        "Conservative": 0.09945743530000001
+      },
+      {
+        "Libertarian": 0.4144125283,
+        "Green": 0.1869176626,
+        "Liberal": 0.1421163231,
+        "Conservative": 0.2565535605
+      },
+      {
+        "Libertarian": 0.344070822,
+        "Liberal": 0.1654977202,
+        "Green": 0.0536681898,
+        "Conservative": 0.43676322700000003
+      },
+      {
+        "Libertarian": 0.4215749502,
+        "Green": 0.1460711509,
+        "Liberal": 0.1054664552,
+        "Conservative": 0.3268874586
+      },
+      {
+        "Libertarian": 0.32276591660000004,
+        "Green": 0.2592920959,
+        "Liberal": 0.18968358640000002,
+        "Conservative": 0.2282583863
+      },
+      {
+        "Libertarian": 0.3152510226,
+        "Green": 0.3123589158,
+        "Liberal": 0.0786140263,
+        "Conservative": 0.2937759757
+      },
+      {
+        "Libertarian": 0.3787916303,
+        "Green": 0.2579566836,
+        "Liberal": 0.1901272684,
+        "Conservative": 0.1731243879
+      },
+      {
+        "Libertarian": 0.22642494740000002,
+        "Green": 0.24834500250000002,
+        "Liberal": 0.2016124427,
+        "Conservative": 0.3236176968
+      },
+      {
+        "Libertarian": 0.0017205039,
+        "Green": 0.9951773882,
+        "Liberal": 0.0026787205,
+        "Conservative": 0.0004233053
+      },
+      {
+        "Libertarian": 0.2713392079,
+        "Green": 0.30297657850000004,
+        "Liberal": 0.2479471862,
+        "Conservative": 0.1777370274
+      },
+      {
+        "Libertarian": 0.22780004140000001,
+        "Liberal": 0.3576489389,
+        "Green": 0.0827700496,
+        "Conservative": 0.33178099990000004
+      },
+      {
+        "Libertarian": 0.1855769306,
+        "Green": 0.4845030308,
+        "Liberal": 0.1261318475,
+        "Conservative": 0.2037881315
+      },
+      {
+        "Libertarian": 0.0643898696,
+        "Green": 0.8178160191,
+        "Liberal": 0.0731777027,
+        "Conservative": 0.044616386300000005
+      },
+      {
+        "Libertarian": 0.2211609185,
+        "Liberal": 0.33655121920000003,
+        "Green": 0.2455529422,
+        "Conservative": 0.1967349499
+      },
+      {
+        "Libertarian": 0.16840833430000002,
+        "Green": 0.6121569872,
+        "Liberal": 0.1289252341,
+        "Conservative": 0.09050946680000001
+      },
+      {
+        "Libertarian": 0.19135111570000002,
+        "Green": 0.49242466690000003,
+        "Liberal": 0.1624566466,
+        "Conservative": 0.1537675709
+      },
+      {
+        "Libertarian": 0.1318908632,
+        "Green": 0.6141347885,
+        "Liberal": 0.1837693751,
+        "Conservative": 0.07020495090000001
+      },
+      {
+        "Libertarian": 0.1551425457,
+        "Green": 0.6662738919,
+        "Liberal": 0.1402130574,
+        "Conservative": 0.0383705124
+      },
+      {
+        "Libertarian": 0.35527017710000003,
+        "Green": 0.2772353292,
+        "Liberal": 0.2134083062,
+        "Conservative": 0.15408624710000002
+      },
+      {
+        "Libertarian": 0.4046827555,
+        "Green": 0.20852737130000001,
+        "Liberal": 0.1312334239,
+        "Conservative": 0.255556494
+      },
+      {
+        "Libertarian": 0.3004535139,
+        "Green": 0.2734597623,
+        "Liberal": 0.2052456141,
+        "Conservative": 0.2208411396
+      },
+      {
+        "Libertarian": 0.3535746932,
+        "Liberal": 0.2725043297,
+        "Green": 0.12161824110000001,
+        "Conservative": 0.25230267640000004
+      },
+      {
+        "Libertarian": 0.21216222640000001,
+        "Green": 0.3237344921,
+        "Liberal": 0.2292621732,
+        "Conservative": 0.23484110830000002
+      },
+      {
+        "Libertarian": 0.16902488470000002,
+        "Liberal": 0.3776648939,
+        "Green": 0.3431543112,
+        "Conservative": 0.11015591770000001
+      },
+      {
+        "Libertarian": 0.3908059001,
+        "Green": 0.209938705,
+        "Liberal": 0.1368235201,
+        "Conservative": 0.2624318302
+      },
+      {
+        "Libertarian": 0.2077263296,
+        "Green": 0.25394693020000003,
+        "Liberal": 0.18712566790000001,
+        "Conservative": 0.35120108720000004
+      },
+      {
+        "Libertarian": 0.2273810506,
+        "Green": 0.29502862690000003,
+        "Liberal": 0.27313208580000004,
+        "Conservative": 0.20445823670000002
+      },
+      {
+        "Libertarian": 0.28643044830000003,
+        "Liberal": 0.2603334785,
+        "Green": 0.06252927330000001,
+        "Conservative": 0.3907068074
+      },
+      {
+        "Libertarian": 0.23342886570000002,
+        "Liberal": 0.1326954216,
+        "Green": 0.0296010077,
+        "Conservative": 0.6042746902
+      },
+      {
+        "Libertarian": 0.45486384630000004,
+        "Liberal": 0.1728617251,
+        "Green": 0.1008785143,
+        "Conservative": 0.2713960111
+      },
+      {
+        "Libertarian": 0.2820617855,
+        "Green": 0.32224938270000003,
+        "Liberal": 0.2567542195,
+        "Conservative": 0.13893465700000002
+      },
+      {
+        "Libertarian": 0.282292068,
+        "Green": 0.4813788533,
+        "Liberal": 0.09669621290000001,
+        "Conservative": 0.13963288070000002
+      },
+      {
+        "Libertarian": 0.1482063681,
+        "Green": 0.5119405985000001,
+        "Liberal": 0.1801591814,
+        "Conservative": 0.1596939564
+      },
+      {
+        "Libertarian": 0.3004999161,
+        "Green": 0.37979519370000003,
+        "Liberal": 0.1502554417,
+        "Conservative": 0.1694494486
+      },
+      {
+        "Libertarian": 0.24309515950000002,
+        "Green": 0.5064392090000001,
+        "Liberal": 0.12948861720000002,
+        "Conservative": 0.12097705160000001
+      },
+      {
+        "Libertarian": 0.2476925701,
+        "Liberal": 0.2781707346,
+        "Green": 0.12385013700000001,
+        "Conservative": 0.3502865732
+      },
+      {
+        "Libertarian": 0.29656264190000003,
+        "Green": 0.3398296535,
+        "Liberal": 0.2236011624,
+        "Conservative": 0.1400064677
+      },
+      {
+        "Libertarian": 0.2035148591,
+        "Green": 0.4499165714,
+        "Liberal": 0.17707745730000002,
+        "Conservative": 0.1694910824
+      },
+      {
+        "Libertarian": 0.6197251678,
+        "Liberal": 0.1370230019,
+        "Green": 0.1229284331,
+        "Conservative": 0.1203235015
+      },
+      {
+        "Libertarian": 0.2861923873,
+        "Green": 0.1167563498,
+        "Liberal": 0.1144659221,
+        "Conservative": 0.4825853109
+      },
+      {
+        "Libertarian": 0.2665518224,
+        "Green": 0.3198284209,
+        "Liberal": 0.19993589820000002,
+        "Conservative": 0.2136838883
+      },
+      {
+        "Libertarian": 0.10345675800000001,
+        "Green": 0.5560973883,
+        "Liberal": 0.12155657260000001,
+        "Conservative": 0.218889311
+      },
+      {
+        "Libertarian": 0.133262977,
+        "Liberal": 0.6078944802,
+        "Green": 0.057711113200000004,
+        "Conservative": 0.2011313736
+      },
+      {
+        "Libertarian": 0.0439386889,
+        "Green": 0.8887585402,
+        "Liberal": 0.0351695344,
+        "Conservative": 0.0321332775
+      },
+      {
+        "Libertarian": 0.1088188365,
+        "Green": 0.6907671094000001,
+        "Liberal": 0.1353474557,
+        "Conservative": 0.0650666505
+      },
+      {
+        "Libertarian": 0.2323353738,
+        "Green": 0.37374153730000004,
+        "Liberal": 0.22891493140000002,
+        "Conservative": 0.1650081575
+      },
+      {
+        "Libertarian": 0.1620107591,
+        "Green": 0.5797635317000001,
+        "Liberal": 0.1315220743,
+        "Conservative": 0.1267036498
+      },
+      {
+        "Libertarian": 0.3556793332,
+        "Liberal": 0.30195787550000003,
+        "Green": 0.1759846807,
+        "Conservative": 0.16637811060000002
+      },
+      {
+        "Libertarian": 0.2829833627,
+        "Liberal": 0.31225901840000003,
+        "Green": 0.0406732485,
+        "Conservative": 0.3640844226
+      },
+      {
+        "Libertarian": 0.1298873276,
+        "Green": 0.42861980200000005,
+        "Liberal": 0.30928146840000004,
+        "Conservative": 0.1322114319
+      },
+      {
+        "Libertarian": 0.0098190475,
+        "Green": 0.8864285350000001,
+        "Liberal": 0.10252550240000001,
+        "Conservative": 0.0012268865000000001
+      },
+      {
+        "Libertarian": 0.22898732130000002,
+        "Green": 0.43784493210000003,
+        "Liberal": 0.1512729824,
+        "Conservative": 0.1818947643
+      },
+      {
+        "Libertarian": 0.1315464526,
+        "Green": 0.30162853,
+        "Liberal": 0.24078127740000002,
+        "Conservative": 0.32604375480000003
+      },
+      {
+        "Libertarian": 0.3455997705,
+        "Green": 0.1668167263,
+        "Liberal": 0.1283744425,
+        "Conservative": 0.35920900110000004
+      },
+      {
+        "Libertarian": 0.2491012961,
+        "Green": 0.3758833706,
+        "Liberal": 0.1760419905,
+        "Conservative": 0.198973313
+      },
+      {
+        "Libertarian": 0.3162885606,
+        "Green": 0.30508980150000004,
+        "Liberal": 0.21332550050000001,
+        "Conservative": 0.1652961075
+      },
+      {
+        "Libertarian": 0.5773220658,
+        "Green": 0.11852562430000001,
+        "Liberal": 0.11136052760000001,
+        "Conservative": 0.19279177490000002
+      },
+      {
+        "Libertarian": 0.349162668,
+        "Green": 0.2009196281,
+        "Liberal": 0.156394437,
+        "Conservative": 0.2935233414
+      },
+      {
+        "Libertarian": 0.2824290991,
+        "Liberal": 0.2590459287,
+        "Green": 0.2056059688,
+        "Conservative": 0.2529190779
+      },
+      {
+        "Libertarian": 0.2801043093,
+        "Green": 0.3002267182,
+        "Liberal": 0.1286864281,
+        "Conservative": 0.2909825444
+      },
+      {
+        "Libertarian": 0.2915522754,
+        "Liberal": 0.3929297626,
+        "Green": 0.0354652815,
+        "Conservative": 0.2800526619
+      },
+      {
+        "Libertarian": 0.1449840665,
+        "Liberal": 0.39342367650000004,
+        "Green": 0.360828191,
+        "Conservative": 0.1007640809
+      },
+      {
+        "Libertarian": 0.2240305841,
+        "Green": 0.3151538074,
+        "Liberal": 0.2650633156,
+        "Conservative": 0.1957522929
+      },
+      {
+        "Libertarian": 0.1923631728,
+        "Green": 0.3452520967,
+        "Liberal": 0.3427433372,
+        "Conservative": 0.1196413785
+      },
+      {
+        "Libertarian": 0.0112040769,
+        "Green": 0.6344501376,
+        "Liberal": 0.32369008660000004,
+        "Conservative": 0.0306556132
+      },
+      {
+        "Libertarian": 0.1997337639,
+        "Green": 0.48181730510000004,
+        "Liberal": 0.1720556617,
+        "Conservative": 0.1463932544
+      },
+      {
+        "Libertarian": 0.4845628738,
+        "Liberal": 0.2484927624,
+        "Green": 0.1377038807,
+        "Conservative": 0.1292405128
+      },
+      {
+        "Libertarian": 0.1936292201,
+        "Liberal": 0.31539666650000003,
+        "Green": 0.22764827310000002,
+        "Conservative": 0.2633258104
+      },
+      {
+        "Libertarian": 0.048222720600000005,
+        "Green": 0.8712470531000001,
+        "Liberal": 0.052271090400000005,
+        "Conservative": 0.0282590929
+      },
+      {
+        "Libertarian": 0.1912853867,
+        "Green": 0.3575948775,
+        "Liberal": 0.2016529143,
+        "Conservative": 0.24946688120000002
+      },
+      {
+        "Libertarian": 0.1883622557,
+        "Liberal": 0.0524019711,
+        "Green": 0.0052126907000000005,
+        "Conservative": 0.7540230155000001
+      },
+      {
+        "Libertarian": 0.1656454504,
+        "Liberal": 0.228935346,
+        "Green": 0.058487098700000004,
+        "Conservative": 0.5469321012
+      },
+      {
+        "Libertarian": 0.1809133887,
+        "Green": 0.37064254280000003,
+        "Liberal": 0.32406514880000004,
+        "Conservative": 0.1243789047
+      },
+      {
+        "Libertarian": 0.5498451591,
+        "Green": 0.1726002097,
+        "Liberal": 0.1552069783,
+        "Conservative": 0.1223476976
+      },
+      {
+        "Libertarian": 0.2376759052,
+        "Green": 0.4046987295,
+        "Liberal": 0.2053861767,
+        "Conservative": 0.15223921840000001
+      },
+      {
+        "Libertarian": 0.189627707,
+        "Liberal": 0.12266177680000001,
+        "Green": 0.018845517200000002,
+        "Conservative": 0.668865025
+      },
+      {
+        "Libertarian": 0.23369212450000001,
+        "Green": 0.3716037273,
+        "Liberal": 0.1489927024,
+        "Conservative": 0.2457113564
+      },
+      {
+        "Libertarian": 0.2171026617,
+        "Liberal": 0.1441796422,
+        "Green": 0.13532151280000002,
+        "Conservative": 0.5033960938
+      },
+      {
+        "Libertarian": 0.24337311090000002,
+        "Green": 0.4193502069,
+        "Liberal": 0.2218822688,
+        "Conservative": 0.1153943837
+      },
+      {
+        "Libertarian": 0.0273611937,
+        "Green": 0.8835512400000001,
+        "Liberal": 0.053826708300000005,
+        "Conservative": 0.0352608562
+      },
+      {
+        "Libertarian": 0.1247649044,
+        "Liberal": 0.1906717271,
+        "Green": 0.09868437050000001,
+        "Conservative": 0.5858790278
+      },
+      {
+        "Libertarian": 0.1042911485,
+        "Liberal": 0.4643131793,
+        "Green": 0.2958490849,
+        "Conservative": 0.1355465055
+      },
+      {
+        "Libertarian": 0.6368286014,
+        "Liberal": 0.1620172709,
+        "Green": 0.0691050366,
+        "Conservative": 0.1320491135
+      },
+      {
+        "Libertarian": 0.3230363429,
+        "Green": 0.3093966544,
+        "Liberal": 0.2083058357,
+        "Conservative": 0.1592612416
+      },
+      {
+        "Libertarian": 0.0042940467,
+        "Green": 0.9541288614000001,
+        "Liberal": 0.0338192768,
+        "Conservative": 0.0077577946
+      },
+      {
+        "Libertarian": 0.15699236090000002,
+        "Green": 0.3168055117,
+        "Liberal": 0.2788250446,
+        "Conservative": 0.2473770082
+      },
+      {
+        "Libertarian": 0.11368369310000001,
+        "Liberal": 0.3441233635,
+        "Green": 0.0479291789,
+        "Conservative": 0.4942637682
+      },
+      {
+        "Libertarian": 0.5451114774,
+        "Liberal": 0.1002250835,
+        "Green": 0.0783026889,
+        "Conservative": 0.27636078000000003
+      },
+      {
+        "Libertarian": 0.1363920271,
+        "Green": 0.5735524297,
+        "Liberal": 0.0840286538,
+        "Conservative": 0.2060269117
+      },
+      {
+        "Libertarian": 0.152925849,
+        "Green": 0.5436647534,
+        "Liberal": 0.1973242909,
+        "Conservative": 0.1060851216
+      },
+      {
+        "Libertarian": 0.3342845738,
+        "Liberal": 0.1372952312,
+        "Green": 0.0725889131,
+        "Conservative": 0.4558313191
+      },
+      {
+        "Libertarian": 0.24712124470000002,
+        "Green": 0.4464634061,
+        "Liberal": 0.1665795296,
+        "Conservative": 0.13983576
+      },
+      {
+        "Libertarian": 0.2190624475,
+        "Liberal": 0.2898391783,
+        "Green": 0.1889115572,
+        "Conservative": 0.3021868467
+      },
+      {
+        "Libertarian": 0.0828433558,
+        "Green": 0.6053277850000001,
+        "Liberal": 0.0921612754,
+        "Conservative": 0.2196676135
+      },
+      {
+        "Libertarian": 0.2273785919,
+        "Green": 0.1128569916,
+        "Liberal": 0.0704674646,
+        "Conservative": 0.5892969966
+      },
+      {
+        "Libertarian": 0.2853301764,
+        "Green": 0.3175556064,
+        "Liberal": 0.18924766780000002,
+        "Conservative": 0.2078665346
+      },
+      {
+        "Libertarian": 0.2896648645,
+        "Liberal": 0.043937187600000004,
+        "Green": 0.027452405500000002,
+        "Conservative": 0.6389455795
+      },
+      {
+        "Libertarian": 0.4203540981,
+        "Green": 0.3150852621,
+        "Liberal": 0.1579478979,
+        "Conservative": 0.1066128239
+      }
+    ],
+    "wsj": [
+      {
+        "Libertarian": 0.4800747931,
+        "Liberal": 0.085750699,
+        "Green": 0.0106748482,
+        "Conservative": 0.4234997332
+      },
+      {
+        "Libertarian": 0.1876456887,
+        "Liberal": 0.5386090279,
+        "Green": 0.047025915200000004,
+        "Conservative": 0.2267193496
+      },
+      {
+        "Libertarian": 0.3289203048,
+        "Green": 0.3767975569,
+        "Liberal": 0.20393848420000002,
+        "Conservative": 0.09034368400000001
+      },
+      {
+        "Libertarian": 0.5527060628,
+        "Liberal": 0.1598198265,
+        "Green": 0.0021897473000000002,
+        "Conservative": 0.2852844
+      },
+      {
+        "Libertarian": 0.3667519093,
+        "Liberal": 0.31505084040000003,
+        "Green": 0.2289993763,
+        "Conservative": 0.0891978145
+      },
+      {
+        "Libertarian": 0.3795633614,
+        "Green": 0.28864952920000003,
+        "Liberal": 0.1615484357,
+        "Conservative": 0.17023864390000001
+      },
+      {
+        "Libertarian": 0.4381493628,
+        "Liberal": 0.38956815,
+        "Green": 0.0914939418,
+        "Conservative": 0.08078848570000001
+      },
+      {
+        "Libertarian": 0.3971520066,
+        "Green": 0.2561006248,
+        "Liberal": 0.1721579581,
+        "Conservative": 0.17458947
+      },
+      {
+        "Libertarian": 0.0622704029,
+        "Green": 0.7694903612,
+        "Liberal": 0.1128611192,
+        "Conservative": 0.0553781167
+      },
+      {
+        "Libertarian": 0.2589900792,
+        "Green": 0.3326484859,
+        "Liberal": 0.2510697246,
+        "Conservative": 0.1572916955
+      },
+      {
+        "Libertarian": 0.09179788080000001,
+        "Liberal": 0.5129230022,
+        "Green": 0.3316257298,
+        "Conservative": 0.0636534393
+      },
+      {
+        "Libertarian": 0.2654212415,
+        "Green": 0.42679375410000003,
+        "Liberal": 0.19962169230000001,
+        "Conservative": 0.1081633121
+      },
+      {
+        "Libertarian": 0.44335213300000004,
+        "Green": 0.2555339038,
+        "Liberal": 0.1855697036,
+        "Conservative": 0.1155442894
+      },
+      {
+        "Libertarian": 0.4390505254,
+        "Liberal": 0.2414776683,
+        "Green": 0.1530950516,
+        "Conservative": 0.16637672480000001
+      },
+      {
+        "Libertarian": 0.20201942320000002,
+        "Liberal": 0.36997017260000004,
+        "Green": 0.2699176967,
+        "Conservative": 0.1580926031
+      },
+      {
+        "Libertarian": 0.1227983311,
+        "Liberal": 0.4017341733,
+        "Green": 0.1902952641,
+        "Conservative": 0.2851722836
+      },
+      {
+        "Libertarian": 0.1786181331,
+        "Liberal": 0.33087459210000003,
+        "Green": 0.3212687373,
+        "Conservative": 0.1692385525
+      },
+      {
+        "Libertarian": 0.3977036476,
+        "Green": 0.3568063676,
+        "Liberal": 0.1892846376,
+        "Conservative": 0.056205377
+      },
+      {
+        "Libertarian": 0.0390958451,
+        "Green": 0.9196923971000001,
+        "Liberal": 0.0277147144,
+        "Conservative": 0.0134970043
+      },
+      {
+        "Libertarian": 0.2787450254,
+        "Liberal": 0.3021177351,
+        "Green": 0.282058984,
+        "Conservative": 0.1370782852
+      },
+      {
+        "Libertarian": 0.0028764366,
+        "Liberal": 0.9823642969,
+        "Green": 0.014054923300000001,
+        "Conservative": 0.0007043405
+      },
+      {
+        "Libertarian": 0.2672513127,
+        "Liberal": 0.27654325960000004,
+        "Green": 0.26010596750000003,
+        "Conservative": 0.19609953460000001
+      },
+      {
+        "Libertarian": 0.3612421751,
+        "Liberal": 0.1879947484,
+        "Green": 0.11179558190000001,
+        "Conservative": 0.33896750210000004
+      },
+      {
+        "Libertarian": 0.4216676056,
+        "Green": 0.1855781674,
+        "Liberal": 0.1245899126,
+        "Conservative": 0.26816436650000003
+      },
+      {
+        "Libertarian": 0.248784259,
+        "Liberal": 0.08832728120000001,
+        "Green": 0.018726198,
+        "Conservative": 0.6441623569
+      },
+      {
+        "Libertarian": 0.033753983700000004,
+        "Green": 0.863676846,
+        "Liberal": 0.0715729818,
+        "Conservative": 0.0309962314
+      },
+      {
+        "Libertarian": 0.9358873963000001,
+        "Green": 0.0283094179,
+        "Liberal": 0.0242567137,
+        "Conservative": 0.0115464274
+      },
+      {
+        "Libertarian": 0.3458252549,
+        "Liberal": 0.38793870810000003,
+        "Green": 0.12748366590000001,
+        "Conservative": 0.1387523711
+      },
+      {
+        "Libertarian": 0.27666687970000003,
+        "Liberal": 0.4846000373,
+        "Green": 0.1156859323,
+        "Conservative": 0.12304716560000001
+      },
+      {
+        "Libertarian": 0.066563338,
+        "Green": 0.7648470998,
+        "Liberal": 0.0794963241,
+        "Conservative": 0.0890933052
+      },
+      {
+        "Libertarian": 0.2132322341,
+        "Green": 0.6376319528000001,
+        "Liberal": 0.0544363707,
+        "Conservative": 0.09469948710000001
+      },
+      {
+        "Libertarian": 0.6936058402,
+        "Liberal": 0.013329175300000001,
+        "Green": 0.0054943357,
+        "Conservative": 0.28757071500000003
+      },
+      {
+        "Libertarian": 0.6435420513,
+        "Liberal": 0.172688067,
+        "Green": 0.0735546872,
+        "Conservative": 0.1102152467
+      },
+      {
+        "Libertarian": 0.3057496846,
+        "Green": 0.2826346755,
+        "Liberal": 0.1900303811,
+        "Conservative": 0.22158525880000002
+      },
+      {
+        "Libertarian": 0.5508750081,
+        "Green": 0.2224992663,
+        "Liberal": 0.1380039006,
+        "Conservative": 0.08862178770000001
+      },
+      {
+        "Libertarian": 0.2176669836,
+        "Green": 0.367156446,
+        "Liberal": 0.1995589435,
+        "Conservative": 0.2156177014
+      },
+      {
+        "Libertarian": 0.2940224409,
+        "Green": 0.2128067166,
+        "Liberal": 0.2014051974,
+        "Conservative": 0.29176566
+      },
+      {
+        "Libertarian": 0.046401646000000005,
+        "Green": 0.8561278582,
+        "Liberal": 0.07762660090000001,
+        "Conservative": 0.0198438056
+      },
+      {
+        "Libertarian": 0.5429852009,
+        "Liberal": 0.20307007430000001,
+        "Green": 0.09398044650000001,
+        "Conservative": 0.1599642187
+      },
+      {
+        "Libertarian": 0.21771065890000002,
+        "Green": 0.39276948570000003,
+        "Liberal": 0.2413300127,
+        "Conservative": 0.1481898576
+      },
+      {
+        "Libertarian": 0.2396909744,
+        "Green": 0.2758181691,
+        "Liberal": 0.1852041483,
+        "Conservative": 0.2992868125
+      },
+      {
+        "Libertarian": 0.2297840714,
+        "Green": 0.4690073729,
+        "Liberal": 0.1692833751,
+        "Conservative": 0.1319251806
+      },
+      {
+        "Libertarian": 0.1998033673,
+        "Liberal": 0.413601011,
+        "Green": 0.2985225916,
+        "Conservative": 0.0880730525
+      },
+      {
+        "Libertarian": 0.3211066723,
+        "Green": 0.2789463997,
+        "Liberal": 0.16834566,
+        "Conservative": 0.2316012681
+      },
+      {
+        "Libertarian": 0.2398621589,
+        "Green": 0.6269490719,
+        "Liberal": 0.08802245560000001,
+        "Conservative": 0.0451662838
+      },
+      {
+        "Libertarian": 0.2630872428,
+        "Liberal": 0.0738171861,
+        "Green": 0.015620358300000001,
+        "Conservative": 0.6474751830000001
+      },
+      {
+        "Libertarian": 0.264303863,
+        "Liberal": 0.284735024,
+        "Green": 0.0841046199,
+        "Conservative": 0.366856426
+      },
+      {
+        "Libertarian": 0.4008366466,
+        "Liberal": 0.084124133,
+        "Green": 0.0457109995,
+        "Conservative": 0.4693281353
+      },
+      {
+        "Libertarian": 0.4960225224,
+        "Green": 0.21185007690000002,
+        "Liberal": 0.1762987226,
+        "Conservative": 0.1158286631
+      },
+      {
+        "Libertarian": 0.21053661410000002,
+        "Green": 0.39318293330000004,
+        "Liberal": 0.21126504240000002,
+        "Conservative": 0.18501552940000002
+      },
+      {
+        "Libertarian": 0.7248187065,
+        "Liberal": 0.12406688930000001,
+        "Green": 0.0725621134,
+        "Conservative": 0.0785522386
+      },
+      {
+        "Libertarian": 0.0166613366,
+        "Green": 0.9683610797000001,
+        "Liberal": 0.0087675815,
+        "Conservative": 0.006210017500000001
+      },
+      {
+        "Libertarian": 0.1844137609,
+        "Green": 0.4138721824,
+        "Liberal": 0.34053635600000004,
+        "Conservative": 0.0611776523
+      },
+      {
+        "Libertarian": 0.2051902264,
+        "Green": 0.3558551669,
+        "Liberal": 0.33221417670000003,
+        "Conservative": 0.1067404225
+      },
+      {
+        "Libertarian": 0.3856401443,
+        "Green": 0.3562638164,
+        "Liberal": 0.1503239423,
+        "Conservative": 0.10777213420000001
+      },
+      {
+        "Libertarian": 0.275046885,
+        "Liberal": 0.323990047,
+        "Green": 0.17262199520000002,
+        "Conservative": 0.22834104300000002
+      },
+      {
+        "Libertarian": 0.1870696843,
+        "Green": 0.43684834240000003,
+        "Liberal": 0.2223972827,
+        "Conservative": 0.1536847353
+      },
+      {
+        "Libertarian": 0.036050289900000004,
+        "Green": 0.8494268656,
+        "Liberal": 0.0693683252,
+        "Conservative": 0.0451544933
+      },
+      {
+        "Libertarian": 0.7138618827000001,
+        "Liberal": 0.1919614822,
+        "Green": 0.0142745022,
+        "Conservative": 0.0799021572
+      },
+      {
+        "Libertarian": 0.46076223250000004,
+        "Liberal": 0.1522611082,
+        "Green": 0.1419571191,
+        "Conservative": 0.24501949550000002
+      },
+      {
+        "Libertarian": 0.2514738441,
+        "Green": 0.4347723126,
+        "Liberal": 0.1762162149,
+        "Conservative": 0.1375377029
+      },
+      {
+        "Libertarian": 0.1771124452,
+        "Green": 0.4708769917,
+        "Liberal": 0.31497606640000003,
+        "Conservative": 0.0370343849
+      },
+      {
+        "Libertarian": 0.2561943829,
+        "Green": 0.3309087753,
+        "Liberal": 0.1531362385,
+        "Conservative": 0.2597606778
+      },
+      {
+        "Libertarian": 0.4498060346,
+        "Green": 0.3265888691,
+        "Liberal": 0.065239504,
+        "Conservative": 0.1583656222
+      },
+      {
+        "Libertarian": 0.0126614766,
+        "Green": 0.9521315098,
+        "Liberal": 0.0246401634,
+        "Conservative": 0.0105668418
+      },
+      {
+        "Libertarian": 0.4455983341,
+        "Liberal": 0.2387741506,
+        "Green": 0.0626507476,
+        "Conservative": 0.2529767156
+      },
+      {
+        "Libertarian": 0.0660388172,
+        "Green": 0.7752318978,
+        "Liberal": 0.1200135574,
+        "Conservative": 0.0387158208
+      },
+      {
+        "Libertarian": 0.6174934506,
+        "Liberal": 0.1810874194,
+        "Green": 0.0532623678,
+        "Conservative": 0.14815670250000001
+      },
+      {
+        "Libertarian": 0.4861142337,
+        "Liberal": 0.2636235952,
+        "Green": 0.1357873976,
+        "Conservative": 0.1144747958
+      },
+      {
+        "Libertarian": 0.0644617006,
+        "Green": 0.6107646227,
+        "Liberal": 0.2433968782,
+        "Conservative": 0.08137676120000001
+      },
+      {
+        "Libertarian": 0.5644167066,
+        "Green": 0.1251495779,
+        "Liberal": 0.0747733116,
+        "Conservative": 0.2356604189
+      },
+      {
+        "Libertarian": 0.1602249295,
+        "Green": 0.42652001980000004,
+        "Liberal": 0.3194534183,
+        "Conservative": 0.09380163250000001
+      },
+      {
+        "Libertarian": 0.2511335015,
+        "Green": 0.44666913150000004,
+        "Liberal": 0.20829665660000002,
+        "Conservative": 0.0939006805
+      },
+      {
+        "Libertarian": 0.6417639852,
+        "Liberal": 0.23615375160000002,
+        "Green": 0.0470869578,
+        "Conservative": 0.074995324
+      },
+      {
+        "Libertarian": 0.2838346064,
+        "Green": 0.2691971958,
+        "Liberal": 0.24593420330000001,
+        "Conservative": 0.20103399460000002
+      },
+      {
+        "Libertarian": 0.2045440972,
+        "Liberal": 0.29032912850000003,
+        "Green": 0.13231177630000002,
+        "Conservative": 0.3728150129
+      },
+      {
+        "Libertarian": 0.5774821639000001,
+        "Green": 0.2912115753,
+        "Liberal": 0.06512524930000001,
+        "Conservative": 0.0661809891
+      },
+      {
+        "Libertarian": 0.2341356575,
+        "Green": 0.5595199466,
+        "Liberal": 0.0885828584,
+        "Conservative": 0.11776157470000001
+      },
+      {
+        "Libertarian": 0.21421755850000002,
+        "Liberal": 0.37649315600000005,
+        "Green": 0.1364270747,
+        "Conservative": 0.2728622556
+      },
+      {
+        "Libertarian": 0.8182781935000001,
+        "Liberal": 0.0187844429,
+        "Green": 0.0100585306,
+        "Conservative": 0.1528788507
+      },
+      {
+        "Libertarian": 0.3354336619,
+        "Green": 0.3502412438,
+        "Liberal": 0.1683505177,
+        "Conservative": 0.1459745914
+      },
+      {
+        "Libertarian": 0.005025357,
+        "Green": 0.9781157374,
+        "Liberal": 0.009435333300000001,
+        "Conservative": 0.007423668600000001
+      },
+      {
+        "Libertarian": 0.3891894817,
+        "Liberal": 0.14671671390000002,
+        "Green": 0.1091439426,
+        "Conservative": 0.3549498916
+      },
+      {
+        "Libertarian": 0.2546395361,
+        "Liberal": 0.2080954313,
+        "Green": 0.185652867,
+        "Conservative": 0.3516122103
+      },
+      {
+        "Libertarian": 0.5911826491000001,
+        "Liberal": 0.08994391560000001,
+        "Green": 0.0168111436,
+        "Conservative": 0.30206233260000004
+      },
+      {
+        "Libertarian": 0.28417027,
+        "Liberal": 0.175716579,
+        "Green": 0.09191192690000001,
+        "Conservative": 0.4482011795
+      },
+      {
+        "Libertarian": 0.1951725483,
+        "Green": 0.39279603960000004,
+        "Liberal": 0.2369451672,
+        "Conservative": 0.17508627470000002
+      },
+      {
+        "Libertarian": 0.30281087760000003,
+        "Green": 0.4680161774,
+        "Liberal": 0.11686804890000001,
+        "Conservative": 0.11230491100000001
+      },
+      {
+        "Libertarian": 0.0723355785,
+        "Green": 0.5142545104,
+        "Liberal": 0.27562630180000003,
+        "Conservative": 0.13778355720000002
+      },
+      {
+        "Libertarian": 0.1330919713,
+        "Green": 0.7184129357,
+        "Liberal": 0.0657774508,
+        "Conservative": 0.08271766450000001
+      },
+      {
+        "Libertarian": 0.6490249634,
+        "Liberal": 0.1133656204,
+        "Green": 0.040860325100000004,
+        "Conservative": 0.19674904640000002
+      },
+      {
+        "Libertarian": 0.012464924700000001,
+        "Green": 0.9511743188,
+        "Liberal": 0.0095954686,
+        "Conservative": 0.0267653298
+      },
+      {
+        "Libertarian": 0.2880754769,
+        "Liberal": 0.32730758190000003,
+        "Green": 0.2530103326,
+        "Conservative": 0.1316066682
+      },
+      {
+        "Libertarian": 0.2249554396,
+        "Liberal": 0.10695349430000001,
+        "Green": 0.009965968300000001,
+        "Conservative": 0.6581251025
+      },
+      {
+        "Libertarian": 0.2254214138,
+        "Green": 0.5915654898,
+        "Liberal": 0.103211917,
+        "Conservative": 0.07980110500000001
+      },
+      {
+        "Libertarian": 0.2241929919,
+        "Green": 0.4027434587,
+        "Liberal": 0.11714643990000001,
+        "Conservative": 0.2559171319
+      },
+      {
+        "Libertarian": 0.0418894775,
+        "Green": 0.5335425735,
+        "Liberal": 0.3813965023,
+        "Conservative": 0.0431713872
+      },
+      {
+        "Libertarian": 0.3088909984,
+        "Green": 0.4293110073,
+        "Liberal": 0.1391447335,
+        "Conservative": 0.1226533204
+      },
+      {
+        "Libertarian": 0.7558889985,
+        "Liberal": 0.0699002296,
+        "Green": 0.037378989200000004,
+        "Conservative": 0.1368318796
+      },
+      {
+        "Libertarian": 0.4861155152,
+        "Green": 0.2082715929,
+        "Liberal": 0.1042354405,
+        "Conservative": 0.20137734710000002
+      }
+    ]
+  },
+  "average": {
+    "nytimes": {
+      "Libertarian": 0.2339276562757576,
+      "Green": 0.3542632874010101,
+      "Liberal": 0.19969124557272733,
+      "Conservative": 0.21211781838484844
+    },
+    "cnn": {
+      "Libertarian": 0.2557573690232324,
+      "Green": 0.29722756823737373,
+      "Liberal": 0.22129080626969688,
+      "Conservative": 0.2257242609242424
+    },
+    "foxnews": {
+      "Libertarian": 0.27285370122599995,
+      "Green": 0.23974778185999998,
+      "Liberal": 0.20184360540000004,
+      "Conservative": 0.28555492032099994
+    },
+    "msnbc": {
+      "Libertarian": 0.2836054426340206,
+      "Green": 0.23089517188762887,
+      "Liberal": 0.23214618114432994,
+      "Conservative": 0.2533532166474227
+    },
+    "washingtonpost": {
+      "Libertarian": 0.24696038035858578,
+      "Green": 0.3299776492565655,
+      "Liberal": 0.19307063307171718,
+      "Conservative": 0.22999134148686867
+    },
+    "wsj": {
+      "Libertarian": 0.31208644081100007,
+      "Green": 0.31908141578699994,
+      "Liberal": 0.1979217214549999,
+      "Conservative": 0.17091042886500002
+    }
+  }
+}

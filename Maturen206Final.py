@@ -15,6 +15,7 @@ import plotly
 import plotlyInfo
 import plotly.plotly as py
 import plotly.graph_objs as go
+from scipy import signal
 from apiclient import discovery
 from oauth2client import client
 from oauth2client import tools
@@ -83,7 +84,7 @@ def getMessageTime(gmailService, messageID, user_id="me"):
 	except errors.HttpError as error:
 		print('An error occurred. %s' % error)
 
-def allMessageTimes(gmailService, user_id="me"):
+def allMessageTimes(gmailService, emails, user_id="me"):
 	'''
 	Makes requests to get times for all emails in emails dict
 	Args:
@@ -95,7 +96,6 @@ def allMessageTimes(gmailService, user_id="me"):
 
 		TODO: insert into sql table
 	'''
-	global emails
 	emailTimes = []
 	for message in emails["IDs"]:
 		emailTimes.append(getMessageTime(gmailService, message, user_id))
@@ -159,7 +159,6 @@ def politicalAnalysis(newsMessages):
 		analysesFile = open('politicalAnalysis.json', 'r')
 		analyses = json.loads(analysesFile.read())
 		analysesFile.close()
-		print("analyses retrieved from cache")
 		# clean-up from previous calls
 		toDelete = []
 		for s in analyses['average']:
@@ -171,7 +170,7 @@ def politicalAnalysis(newsMessages):
 			del analyses['all'][s]
 	except:
 		writeUpdates = True
-		print("we bouta be making some calls...")
+		print("Please wait while a whole ton of requests are made...")
 		analyses = {'all': {}, 'average': {}}
 	
 	for company in newsMessages:
@@ -191,7 +190,10 @@ def politicalAnalysis(newsMessages):
 			greenSum += res['Green']
 			liberalSum += res['Liberal']
 			conservativeSum += res['Conservative']
-		analyses['average'][company] = {'Libertarian': libertarianSum/len(analyses['all'][company]),'Green': greenSum/len(analyses['all'][company]), 'Liberal': liberalSum/len(analyses['all'][company]),'Conservative': conservativeSum/len(analyses['all'][company])}
+		analyses['average'][company] = {'Libertarian': libertarianSum/len(analyses['all'][company]),
+										'Green': greenSum/len(analyses['all'][company]), 
+										'Liberal': liberalSum/len(analyses['all'][company]),
+										'Conservative': conservativeSum/len(analyses['all'][company])}
 	# save if there were changes
 	if writeUpdates:
 		analysesFile = open('politicalAnalysis.json', 'w')
@@ -226,6 +228,7 @@ def emailCleanAndStore(emails):
 			# avoid errors when API didn't return day
 			maybeDay = re.findall('([A-Za-z]+),', emails['Times'][x])
 			_day = str()
+			# do a bunch of parsing
 			if len(maybeDay) > 0:
 				_day = maybeDay[0]
 			rawTime = re.findall('\d+:\d+:\d+', emails['Times'][x])[0]
@@ -254,15 +257,16 @@ def emailCleanAndStore(emails):
 					hour = 24 + hour - difference
 				else:
 					hour = hour - difference
-			fullTimeInt = hour * 1000 + minute * 100 + second
-			#fullTimeStr = ':'.join([str(hour).zfill(2), str(minute).zfill(2), str(second).zfill(2)])
-			fullTime = datetime.datetime(year,month,date,hour,minute,second)
+			fullTimeInt = hour * 10000 + minute * 100 + second
+			# the below commented-out statement is helpful with debugging
+			# fullTimeStr = ':'.join([str(hour).zfill(2), str(minute).zfill(2), str(second).zfill(2)])
+			fullTime = datetime.datetime(2017,1,1,hour,minute,second)
 			_timeOfDay = 'Night'
-			if fullTimeInt >= 0 and fullTimeInt < 559:
+			if fullTimeInt >= 0 and fullTimeInt < 55900:
 				_timeOfDay = 'EarlyMorning'
-			elif fullTimeInt < 1200:
+			elif fullTimeInt < 120000:
 				_timeOfDay = 'LateMorning'
-			elif fullTimeInt < 1800:
+			elif fullTimeInt < 180000:
 				_timeOfDay = 'Afternoon'
 			tup = _emailID, _day, _timeOfDay, fullTime
 			cur.execute('INSERT INTO Emails (emailID, day, timeOfDay, timePosted) VALUES (?,?,?,?)', tup)
@@ -300,22 +304,22 @@ def getEmailData(gmailService, user_id='me'):
 		# now let's go get some times
 		if 'Times' not in testDict:
 			# make requests for all messages
-			emails['Times'] = allMessageTimes(gmailService, user_id)
+			emails['Times'] = allMessageTimes(gmailService, emails, user_id)
 			needWrite = True
 		else:
 			emails['Times'] = testDict['Times']
 		# get clean time strings
-		if 'TimeStrs' not in testDict:
-			emails['TimeStrs'] = emailCleanAndStore(emails)
-			needWrite = True
-		else:
-			emails['TimeStrs'] = testDict
+		# if 'TimeStrs' not in testDict:
+		# 	emails['TimeStrs'] = emailCleanAndStore(emails)
+		# 	needWrite = True
+		# else:
+		# 	emails['TimeStrs'] = testDict
 
 	except:
 		needWrite = True
 		emails['IDs'] = listMessages(gmailService, user_id)
-		emails['Times'] = allMessageTimes(gmailService, user_id)
-		emails['TimeStrs'] = emailCleanAndStore(emails)
+		emails['Times'] = allMessageTimes(gmailService, emails, user_id)
+		# emails['TimeStrs'] = emailCleanAndStore(emails)
 
 	if needWrite:
 		# we only writing if we need to out here
@@ -392,11 +396,10 @@ def getFacebookData():
 		# updates current publicSites (what we already have data for)
 		publicSites = [k for k in newsMessages.keys()]
 		# allows user to modify
-		publicSites =  updateFacebookSites(publicSites, True)
+		publicSites =  updateFacebookSites(publicSites)
 		# make sure we have proper site data
 		if len(newsMessages.keys()) != len(publicSites):
 			raise mismatchingNews
-		print("newsMessages retrieved from cache")
 
 	# for updating with added/deleted sites and avoiding unnecessary calls
 	except mismatchingNews:
@@ -428,7 +431,7 @@ def getFacebookData():
 	# for all other exceptions i.e. no cache file
 	except:
 		# user updates sites
-		publicSites = updateFacebookSites(publicSites, True)
+		publicSites = updateFacebookSites(publicSites)
 		# go get 'em...
 		print('requesting publicSites sites...')
 		for site in publicSites:
@@ -486,7 +489,7 @@ def cleanVideoTimes(vidTimes):
 		year = int(rawDate[0:4])
 		month = int(rawDate[5:7])
 		day = int(rawDate[8:10])
-		dateTimes.append(datetime.datetime(year,month,day,hour,minute,second))
+		dateTimes.append(datetime.datetime(2017,1,1,hour,minute,second))
 	return dateTimes
 
 def getYoutubeData(client):
@@ -533,43 +536,122 @@ def getYoutubeData(client):
 		youtubeRawFile.close()
 	return youtubeData
 
+def emailGeneralizer(emailDateTimes):
+	'''
+	Categorizes emails based on times and associates exponential frequency values
+	to be able to be compared to youtube views
+	NOTE: exponential values are arbitrary. They were helpful for popular videos at the time,
+	and with authenticated user email data. It will not be equally helpful with any subset 
+	of videos and any email user.
 
-def plotYoutubeData(times, views):
-	trace1 = go.Scatter(x=times, y=views, marker={'color': 'red', 'symbol': 'circle-cross', 'size': "10"}, 
-		mode="markers", name='1st Trace')                                        
-	data=go.Data([trace1])
-	layout=go.Layout(title="Popular Youtube Videos", xaxis={'title':'Time'}, yaxis={'title':'Views'})
+	Args: emailDateTimes: list of datetime.datetime objects associated with email data
+	Returns: dict with x and y values for plotting. x: 30-minute time blocks. y: exponential
+	frequency value.
+	'''
+	genTimes = {}
+	# fill genTimes buckets with frequency of emails in this range
+	# must use this method with worse complexity and not .get() to ensure proper plot placement
+	for x in range(0,24):
+		genTimes[x] = {0:0, 30:0}
+	for d in emailDateTimes:
+		if d.minute < 30:
+			genTimes[d.hour][0] += 1
+		else:
+			genTimes[d.hour][30] += 1
+	generalized = {'x': [], 'y': []}
+	for g in genTimes:
+		generalized['y'].append(pow(genTimes[g][0], 10))
+		generalized['x'].append((datetime.datetime(2017,1,1,g,0,0)))
+		generalized['y'].append(pow(genTimes[g][30], 10))
+		generalized['x'].append((datetime.datetime(2017,1,1,g,30,0)))
+	return generalized
+
+def plotYoutubeData(times, views, emailData):
+	'''
+	plots gathered youtube data in comparison with email data using plotly API
+	Args: 
+		times: list of datetime.datetime instances of youtube videos to be plotted
+		views: list of viewcounts for videos in times
+		emailData: dict with x: list of 48 half-hour time buckets and y: frequency of emails
+			during each respective time
+	'''
+	trace1 = go.Scatter(
+		x = times,
+		y = views,
+		marker = {'color': '#EA4335', 'symbol': 'circle-cross', 'size': 14},
+		mode = "markers",
+		name = 'Youtube Videos'
+	)
+	trace2 = go.Scatter(
+		x = emailData['x'],
+		y = emailData['y'],
+		marker = {'color': '#4285F4'},
+		name = 'Email Activity'
+	)
+	trace3 = go.Scatter(
+		x = emailData['x'],
+		y = signal.savgol_filter(emailData['y'], 21, 3),
+		marker = {'color': '#34A853'},
+		name = 'Email Activity Smooth',
+		line = {'width': 6}
+	)
+
+	data=go.Data([trace1, trace2, trace3])
+	layout=go.Layout(
+		title='24-Hour Internet Activity',
+		xaxis={'title':'Time'},
+		yaxis={'title':'Youtube Video Views'})
 	figure=go.Figure(data=data,layout=layout)
 	py.iplot(figure, filename='YoutubeGmailTimes')
 
 
 def plotPoliticalAnalysis(leaningsAverage):
-	# finish and do correctly
-	sites = leaningsAverage.keys()
+	'''
+	Plots average political leaning for each of the specifed sites using plotly API
+	Args:
+		leaningsAverage: dictionary of average political tendencies with specified
+		sites (keys) using indico.io API
+	'''
+	sites = [d for d in leaningsAverage]
 	trace1 = go.Bar(
 	    x = sites,
-	    y = [d['Libertarian'] for d in leaningsAverage],
-	    name = 'Libertarian'
+	    y = [leaningsAverage[d]['Libertarian'] for d in leaningsAverage],
+	    name = 'Libertarian',
+	    marker = {'color': 'orange'},
+	    hoverlabel = {'bgcolor': '#FFFFFF'}
 	)
 	trace2 = go.Bar(
-	    x=sites,
-	    y=[d['Green'] for d in leaningsAverage],
-	    name = 'Green'
+	    x= sites,
+	    y= [leaningsAverage[d]['Green'] for d in leaningsAverage],
+	    name = 'Green',
+	    marker = {'color': 'green'},
+	    hoverlabel = {'bgcolor': '#FFFFFF'}
 	)
 	trace3 = go.Bar(
 		x = sites,
-		y = [d['Liberal'] for d in leaningsAverage],
-		name = 'Liberal'
+		y = [leaningsAverage[d]['Liberal'] for d in leaningsAverage],
+		name = 'Liberal',
+		marker = {'color': 'blue'},
+		hoverlabel = {'bgcolor': '#FFFFFF'}
 	)
 	trace4 = go.Bar(
 		x = sites,
-		y = [d['Conservative'] for d in leaningsAverage],
-		name = 'Conservative'
+		y = [leaningsAverage[d]['Conservative'] for d in leaningsAverage],
+		name = 'Conservative',
+		marker = {'color': 'red'},
+		hoverlabel = {'bgcolor': '#FFFFFF'}
 	)
 
-	data = [trace1, trace2, trace3, trace4]
+	data = go.Data([trace1, trace2, trace3, trace4])
 	layout = go.Layout(
-	    barmode='stack'
+		title = 'Average Political Tendencies',
+		xaxis = {'title':'Facebook Page'},
+		yaxis = {'title': 'Political Tendencies Percentages'},
+		font = {'color':'#FFFFFF', 'family': 'Raleway'},
+	    barmode='stack',
+	    paper_bgcolor = '#596069',
+	    plot_bgcolor = '#596069',
+	    titlefont = {'size': 36},
 	)
 
 	fig = go.Figure(data=data, layout=layout)
@@ -611,18 +693,39 @@ if not credentials or credentials.invalid:
 	print('Storing credentials to ' + credential_path)
 
 
-#flow = InstalledAppFlow.from_client_secrets_file(CLIENT_SECRETS_FILE, SCOPES)
-#credentials = flow.run_console()
 youtube = build('youtube', 'v3', credentials = credentials)
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
 
+fileNames = ['emails.json', 'newsMessages.json', 'politicalAnalysis.json', 'youtubeData.json']
+timeURL = 'https://plot.ly/~M4LL0C/4/popular-youtube-videos/'
+politicalURL = 'https://plot.ly/~M4LL0C/6/average-political-tendencies/'
+
+print('A political and temporal analysis of the Internet')
+print('-------------(At the most basic level)-----------')
+newData = input('Wanna delete the cache and get some fresh data? (Y/N): ').lower()
+if newData[0] == 'y':
+	for f in fileNames:
+		open(f, 'w').close()
+else:
+	print("Good that's expensive anyways. Attempting to retrieve data from cache...")
 # get political analyses of all specified facebook posts
 leanings = politicalAnalysis(getFacebookData())
 # get all email data and store it in emails dict
 emails = getEmailData(gmailService)
+# get all youtube data
 videos = getYoutubeData(youtube)
+# vidDateTimes is full of datetime.datetime objects for easy plotting
 vidDateTimes = cleanVideoTimes(videos['Times'])
+# emailDateTimes is full of datetime.datetime objects for easy plotting
 emailDateTimes = emailCleanAndStore(emails)
-plotYoutubeData(vidDateTimes, videos['Views'])
+plotYoutubeData(vidDateTimes, videos['Views'], emailGeneralizer(emailDateTimes))
+plotPoliticalAnalysis(leanings)
+openBrowser = input('Open web browser to plotted data? (Y/N): ')
+if openBrowser[0] == 'y':
+	webbrowser.open(timeURL)
+	webbrowser.open(politicalURL)
+
+
+
 
